@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Maksim Dokuchaev](https://up.htmlacademy.ru/htmlcss/24/user/487083).
-* Наставник: `Анастасия Харитонова`.
+* Наставник: [Анастасия Харитонова](https://htmlacademy.ru/profile/haritonasty).
 
 ---
 
