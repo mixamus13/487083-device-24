@@ -2,27 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Главнаястраница: Девайс</title>
+    <title>Каталог</title>
   </head>
   <body>
     <header class="main-header">
-      <a href="main-header-logo">
-        <nav class="main-navigation">
-          <img src="img/logo.png" width="163px" height="35" alt="DEVICE">
-        </nav>
+      <a href="#">
+          <img src="img/logo.png" width="163px" height="35" alt="logo «Device»">
       </a>
+       <input><a href="seach">Поиск по сайту</a></input>
       <ul class="navigation-item">
-        <li><a href="seach"></a>Поиск по сайту</li>
         <li><a href="goin.html">Войти</a></li>
+          <button type="button" name="button">Выйти</button>
         <li><a href="compare.html">Сравнить</a></li>
         <li><a href="trush.html">Корзина</a></li>
       </ul>
-      <ul class="cite-navigation">
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="delevery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
+      <nav class="site-navigation"></nav>
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li><a href="delevery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <h1>Моноподы для селфи</h1>
@@ -50,51 +51,40 @@
       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog.item">
-            <h3>
               <span class="category-catalog">Любительская селфи-палка</span>
-            </h3>
             <p class="catalog-item-image">
-              <img src="img/item-1-jpg.png" width="360px" height="380px" alt="">
+              <img src="img/item-1-jpg.png" width="360px" height="380px" alt="item-1-jpg">
             </p>
-            <p class="catalog-item-price">500 руб</p>
+            <span class="catalog-item-price">500 руб</span>
           </li>
           <li class="catalog.item">
-            <h3>
               <span class="category-catalog">Профессиональная селфи-палка</span>
-            </h3>
             <p class="catalog-item-image">
-              <img src="img/item-2-jpg.png" width="360px" height="380px" alt="">
+              <img src="img/item-2-jpg.png" width="360px" height="380px" alt="item-2-jpg">
             </p>
-            <p class="catalog-item-price">1 500 руб</p>
-            </h3>
+            <span class="catalog-item-price">1 500 руб</span>
           </li>
           <li class="catalog.item">
-            <h3>
               <span class="category-catalog">Непотопляемая селфи-палка</span>
-            </h3>
             <p class="catalog-item-image">
-              <img src="img/item-3-jpg.png" width="360px" height="380px" alt="">
+              <img src="img/item-3-jpg.png" width="360px" height="380px" alt="item-3-jpg">
             </p>
-            <p class="catalog-item-price">2 500 руб</p>
-            </h3>
+            <span class="catalog-item-price">2 500 руб</span>
           </li>
           <li class="catalog.item">
-            <h3>
               <span class="category-catalog">Селфи-палка «Следуй за мной»</span>
-            </h3>
             <p class="catalog-item-image">
-              <img src="img/item-4-jpg.png" width="360px" height="380px" alt="">
+              <img src="img/item-4-jpg.png" width="360px" height="380px" alt="item-4-jpg">
             </p>
-            <p class="catalog-item-price">4 900 руб</p>
-            </h3>
+            <span class="catalog-item-price">4 900 руб</span>
           </li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
-      <a href="main-footer-logo">
-        <nav class="main-navigation">
-          <img src="img/logo.png" width="163px" height="35" alt="DEVICE">
+      <a href="footer-logo">
+        <nav class="footer-navigation">
+          <img src="img/logo.png" width="163px" height="35" alt="logo «Device»">
         </nav>
       </a>
       <ul class="navigation-item">
@@ -103,12 +93,12 @@
         <li><a href="trush.html">Корзина</a></li>
       </ul>
       <p>г. Москва, ул. Строителей, 15</p>
-      <ul class="cite-navigation">
+      <ul class="site-navigation">
         <li><a href="delevery.html">Доставка</a></li>
         <li><a href="warranty.html">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
+        <a href="tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
         <div class="footer-social">
           <ul>
             <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -116,7 +106,7 @@
             <li><a class="social-button" href="#">Твитер</a></li>
           </ul>
       </div>
-      <a href="main-footer-logo">
+    <span><a href="https://htmlacademy.ru/courses"></a></span>
         <img src="img/logo-html.png" width="27px" height="35" alt="htmlacademy">
     </footer>
   </body>
