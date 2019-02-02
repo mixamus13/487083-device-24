@@ -44,14 +44,40 @@
         </ul>
           <a href="more-about-us.html">Подробнее о нас</a>
       </section>
-      <section>
+      <section class="map">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a href="#">
-            <img src="img/map-jpg.jpg" width="560" height="222" alt="ул Строителей 15">
+            <img src="img/map-jpg.jpg" width="560" height="222" alt="Офис компании по адресу ул.Строителей 15, Санкт-Петербург">
           </a>
-            <a href="write-us.html">Напишите нам</a>
-      </section>
+          <form action="https://echo.htmlacademy.ru">
+            <a href="#">
+              <img src="img/map-big.jpg" width="999" height="598" alt="Офис компании по адресу ул.Строителей 15, Санкт-Петербург">
+            </a>
+            <button class="modal-close" type="button"></button>
+          </form>
+        </section>
+        <div id="openmodal">
+        <section class="write">
+          <a href="write-us.html">Напишите нам</a>
+            <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <lebel for="write-name">Ваше имя:</lebel>
+              <input id="write-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <lebel for="write-email">Ваш e-mail:</lebel>
+              <input id="write-email" type="text" name="e-mail" value="" placeholder="email@example.com">
+            </p>
+            <p>
+              <lebel for="write-text">Текст письма:</lebel>
+              <input id="write-text" type="text" name="text" value="" placeholder="Текст в свободной форме">
+            </p>
+              <button class="button" type="submit">Отправить</button>
+              <button class="modal-close" type="button"></button>
+            </form>
+        </section>
+        </div>
     </main>
     <footer class="main-footer">
        <a>
