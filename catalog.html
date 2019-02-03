@@ -24,19 +24,20 @@
        </ul>
     <nav>
         <ul class="site-navigation">
-          <li><a>Каталог товаров</a></li>
-          <li><a href="delevery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="catalog">
-          <li><a>Виртуальная реальность</a></li>
-          <li>Фитнес-браслеты</li>
-          <li>Квадрокоптеры</li>
-          <li>Моноподы для селфи</li>
-          <li>Умные часы</li>
-          <li>Экшн-камеры</li>
-        </ul>
+            <li><a href="#">Каталог товаров</a>
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
       </nav>
     </header>
     <main>
@@ -50,20 +51,47 @@
           </li>
           <li><a>Моноподы для селфи</a></li>
         </ul>
-        <h4>Цвет</h4>
+    <form class="filter" method="get" action="#">
+      <fieldset>
+        <legend>Цвет</legend>
         <ul class="color">
-          <li>Черный</li>
-          <li>Белый</li>
-          <li>Синий</li>
-          <li>Красный</li>
-          <li>Розовый</li>
+          <li>
+            <input type="checkbox" name="black" id="filter-black" checked>
+            <label>Черный</label>
+          </li>
+          <li>
+            <input type="checkbox" name="white" id="filter-white">
+            <label>Белый</label>
+          </li>
+          <li>
+            <input type="checkbox" name="blue" id="filter-blue" checked>
+            <label>Синий</label>
+          </li>
+          <li>
+            <input type="checkbox" name="red" id="filter-red" checked>
+            <label>Красный</label>
+          </li>
+          <li>
+            <input type="checkbox" name="pink" id="filter-pink">
+            <label>Розовый</label>
+          </li>
         </ul>
-        <h4>Bluetoth</h4>
+      </fieldset>
+      <fieldset>
+        <legend>Bluetoth</legend>
         <ul>
-          <li>Есть</li>
-          <li>Нет</li>
+          <li>
+            <input type="radio" name="yes" checked>
+            <label>Есть</label>
+          </li>
+          <li>
+            <input type="radio" name="no" value="">
+            <label>Нет</label>
+          </li>
         </ul>
-    <a href="look.html">Показать</a>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog.item">
