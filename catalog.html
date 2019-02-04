@@ -9,7 +9,7 @@
       <a href="index.html">
         <img src="img/logo-device.svg" width="163" height="35" alt="Логотип «Device»">
       </a>
-    <input type="text" placeholder="Поиск по сайту" value="">
+    <input type="search" placeholder="Поиск по сайту" value="">
        <ul class="navigation-item">
          <li>
            <a href="profile.html">Валентин Петухов</a>
@@ -51,42 +51,56 @@
           </li>
           <li><a>Моноподы для селфи</a></li>
         </ul>
-    <form class="filter" method="get" action="#">
+    <form class="filter" method="get" action="https://htmlacademy.ru">
       <fieldset>
         <legend>Цвет</legend>
-        <ul class="color">
-          <li>
+          <ul class="filter">
+            <li>
             <input type="checkbox" name="black" id="filter-black" checked>
-            <label>Черный</label>
+            <label for="filter-black">
+              Черный
+            </label>
           </li>
           <li>
             <input type="checkbox" name="white" id="filter-white">
-            <label>Белый</label>
+            <label for="filter-white">
+              Белый
+            </label>
           </li>
           <li>
             <input type="checkbox" name="blue" id="filter-blue" checked>
-            <label>Синий</label>
+            <label for="filter-blue">
+              Синий
+            </label>
           </li>
           <li>
             <input type="checkbox" name="red" id="filter-red" checked>
-            <label>Красный</label>
+            <label for="filter-red">
+              Красный
+            </label>
           </li>
           <li>
             <input type="checkbox" name="pink" id="filter-pink">
-            <label>Розовый</label>
+            <label for="filter-pink">
+              Розовый
+            </label>
           </li>
         </ul>
       </fieldset>
       <fieldset>
         <legend>Bluetoth</legend>
-        <ul>
-          <li>
-            <input type="radio" name="yes" checked>
-            <label>Есть</label>
+          <ul>
+            <li class="filter-option">
+            <input type="radio" name="bluetoth" id="filter-yes" value="yes" checked>
+            <label for="filter-yes">
+              Есть
+            </label>
           </li>
-          <li>
-            <input type="radio" name="no" value="">
-            <label>Нет</label>
+          <li class="filter-option">
+            <input type="radio" name="bluetoth" id="filter-no" value="no">
+            <label for="filter-no">
+              Нет
+            </label>
           </li>
         </ul>
       </fieldset>
