@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroylight';
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensanslight';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #00000;
+  text-transform: uppercase;
+
+  background-color:
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 1160px;
+  height: 299px;
+  opacity: 0.5;
+  background-color: #f0c52e;
+}
+
+.navigation-item,
+.site-navigation {
+  list-style: none;
+}
+
+.navigation-item a:hover,
+.navigation-item a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #000000;
+}
+
+.navigation-item {
+  font-family: "opensans";
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.site-navigation {
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+section.about-us p{
+  font-family: 'opensanslight';
+  font-size: 15;
+  line-height: 1.33;
+  font-weight: 300;
+  color: #464646;
+  text-transform: none;
+}
+
+section.map p {
+  font-family: 'opensanslight';
+  font-size: 15;
+  line-height: 1.33;
+  font-weight: 300;
+  color: #464646;
+  text-transform: none;
+}
+
+.main-footer {
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-buttons {
+  color: #464646;
+}
