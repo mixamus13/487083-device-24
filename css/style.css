@@ -46,27 +46,48 @@ a {
   text-decoration: none;
 }
 
-.search {
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;
-  line-height: 12px;
-  letter-spacing: 0.15px;
-}
+header {
+  width: 1160px;
+  height: 450px;
+  opacity: 0.5;
+  background-color: #f0c52e;
 }
 
-.navigation-item,
+.search {
+  font-family: 'opensanslight', Arial, sans-serif;
+  opacity: 0.3;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu,
 .site-navigation {
   list-style: none;
 }
 
-.navigation-item a:hover,
-.navigation-item a:focus,
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #000000;
+.user-menu a:hover {
+  background-color: #464646;
 }
 
-.navigation-item {
+.user-menu a:focus {
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.site-navigation a:hover {
+  background-color: #464646;
+}
+
+.site-navigation a:focus {
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.user-menu a {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -80,7 +101,7 @@ a {
   list-style: none;
 }
 
-.site-navigation {
+.site-navigation a {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -94,15 +115,77 @@ a {
 }
 
 section.about-us p{
-  width: 462px;
-  height: 315px;
   font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15;
+  font-size: 15px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 2;
   color: #464646;
+  text-transform: none;
+}
+
+.about-us h2 {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+  color: #000000;
+  text-transform: none;
+}
+
+.about-us a {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: #000000;
+}
+
+.transport {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+  text-decoration: none;
+}
+
+main h1 {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+}
+
+.breadcrumbs a {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
   text-transform: none;
 }
 
@@ -154,24 +237,37 @@ section.catalog {
   color: #464646;
 }
 
-.transport {
+.footer-middle a {
   font-family: 'gilroyextrabold', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
-  line-height: 2.5;
-  color: #000000;
-  text-transform: none;
-  list-style: none;
-  list-style: none;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #ffffff;
 }
 
 section.map p {
   font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15;
+  font-size: 15px;
   line-height: 1.33;
   font-weight: 300;
   color: #464646;
   text-transform: none;
+}
+
+.map a {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: #000000;
 }
 
 .main-footer {
@@ -179,6 +275,79 @@ section.map p {
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
+  color: #000000;
+}
+
+.user-menu a {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #ffffff;
+}
+
+address {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.site-navigation a:enabled {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer-middle a {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer-middle a {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer-social a {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
   color: #000000;
 }
 
@@ -190,19 +359,6 @@ section.map p {
   color: #464646;
 }
 
-.address {
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;
-  width: 201px;
-  height: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
-}
 
 form label {
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -240,4 +396,22 @@ form label {
   letter-spacing: normal;
   text-align: left;
   color: #464646;
+}
+
+.button {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: #000000;
+}
+
+footer {
+  width: 1440px;
+  height: 500px;
+  background-color: #464646;
 }
