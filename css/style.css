@@ -30,7 +30,7 @@
   font-style: normal;
 }
 
-body {
+.inner-page {
   margin: 0;
   padding: 0;
 
@@ -46,11 +46,10 @@ a {
   text-decoration: none;
 }
 
-header {
+.main-header {
   width: 1160px;
   height: 450px;
-  opacity: 0.5;
-  background-color: #f0c52e;
+  background-color: #f7e296;
 }
 
 .search {
@@ -72,19 +71,55 @@ header {
 }
 
 .user-menu a:hover {
-  background-color: #464646;
+  opacity: 0.6;
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .user-menu a:focus {
-  background-color: rgba(255, 255, 255, 0.3)
+  opacity: 0.3;
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation a:hover {
-  background-color: #464646;
+  opacity: 0.6;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .site-navigation a:focus {
-  background-color: rgba(255, 255, 255, 0.3)
+  opacity: 0.3;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-menu a {
@@ -154,16 +189,12 @@ section.about-us p{
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: 3.6px;
-  text-align: left;
+  line-height: 2.5;
   color: #000000;
   text-transform: none;
-  text-decoration: none;
 }
 
-main h1 {
+.container h1 {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -213,19 +244,6 @@ legend {
   text-transform: none;
 }
 
-section.catalog {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: #000000;
-  text-transform: none;
-}
-
 .catalog-item-price {
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 16px;
@@ -247,6 +265,7 @@ section.catalog {
   letter-spacing: 3.6px;
   text-align: left;
   color: #ffffff;
+  text-transform: none;
 }
 
 section.map p {
@@ -276,9 +295,13 @@ section.map p {
   line-height: 24px;
   font-weight: 800;
   color: #000000;
+
+  width: 1440px;
+  height: 550px;
+  background-color: #464646;
 }
 
-.user-menu a {
+.user-menu-footer a {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -288,7 +311,35 @@ section.map p {
   letter-spacing: 0.2px;
   text-align: left;
   color: #ffffff;
+  text-transform: none;
+  list-style: none;
 }
+
+.user-menu-footer a:hover {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.user-menu-footer a:focus {
+  opacity: 0.3;
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 address {
   font-family: 'opensanslight', Arial, sans-serif;
@@ -303,18 +354,6 @@ address {
   text-transform: none;
 }
 
-.site-navigation a:enabled {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 3.6px;
-  text-align: left;
-  color: #ffffff;
-}
-
 .footer-middle a {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
@@ -323,18 +362,6 @@ address {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: 3.6px;
-  text-align: left;
-  color: #ffffff;
-}
-
-.footer-middle a {
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 30px;
-  letter-spacing: 0.1px;
   text-align: left;
   color: #ffffff;
 }
@@ -349,6 +376,7 @@ address {
   letter-spacing: 3.6px;
   text-align: left;
   color: #000000;
+  text-decoration: none;
 }
 
 .footer-social ul {
@@ -408,10 +436,5 @@ form label {
   letter-spacing: 3.6px;
   text-align: center;
   color: #000000;
-}
-
-footer {
-  width: 1440px;
-  height: 500px;
-  background-color: #464646;
+  text-transform: uppercase;
 }
