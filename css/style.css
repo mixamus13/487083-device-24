@@ -48,8 +48,23 @@ a {
 
 .main-header {
   width: 1160px;
-  height: 450px;
+  height: 550px;
   background-color: #f7e296;
+}
+
+.logo:hover {
+  width: 163px;
+  height: 35px;
+  object-fit: contain;
+  opacity: 0.6;
+}
+
+.logo:focus {
+  opacity: 0.3;
+}
+
+.logo:active {
+  opacity: 0.3;
 }
 
 .search {
@@ -63,6 +78,37 @@ a {
   letter-spacing: 0.2px;
   text-align: left;
   color: rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder:hover {
+  opacity: 0.3;
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);;
+}
+
+input::placeholder:focus {
+  opacity: 0.6;
+}
+
+input::placeholder:active {
+  opacity: 0.6;
+}
+
+.search:hover {
+  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search:focus {
+  font-size: 15px;
+  color: #000000;
 }
 
 .user-menu,
@@ -139,17 +185,60 @@ a {
 .site-navigation a {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: 3.6px;
   color: #000000;
+  text-align: left;
   list-style: none;
 }
 
-section.about-us p{
+.site-navigation a:hover {
+  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-navigation a:focus {
+  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.products li {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.products a {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.about-us p{
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -160,7 +249,7 @@ section.about-us p{
   text-transform: none;
 }
 
-.about-us h2 {
+.about-us-h {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -185,6 +274,19 @@ section.about-us p{
   color: #000000;
 }
 
+.contacts-map {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+  color: #000000;
+  text-transform: none;
+}
+
 .transport {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 16px;
@@ -194,7 +296,7 @@ section.about-us p{
   text-transform: none;
 }
 
-.container h1 {
+.container-1 {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -207,20 +309,8 @@ section.about-us p{
   text-transform: none;
 }
 
-.breadcrumbs a {
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.71;
-  letter-spacing: 0.1px;
-  text-align: left;
-  color: rgba(0, 0, 0, 0.3);
-  text-transform: none;
-}
-
-legend {
+.color,
+.bluetooth {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -232,7 +322,8 @@ legend {
   color: #000000;
 }
 
-.filter label {
+.filter-checkbox,
+.filter-option {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -242,8 +333,50 @@ legend {
   letter-spacing: 0.1px;
   color: #000000;
   text-transform: none;
+  list-style: none;
 }
 
+.breadcrumbs {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: none;
+  list-style: none;
+}
+
+.category-catalog {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+form.catalog-item {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+  list-style: none;
+  text-transform: capitalize;
+  text-decoration: none;
+}
 .catalog-item-price {
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 16px;
@@ -252,7 +385,24 @@ legend {
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 0.2px;
+  text-align: right;
   color: #464646;
+  text-transform: capitalize;
+}
+
+.logo-down:hover {
+  width: 163px;
+  height: 35px;
+  object-fit: contain;
+  opacity: 0.6;
+}
+
+.logo-down:focus {
+  opacity: 0.3;
+}
+
+.logo-down:active {
+  opacity: 0.3;
 }
 
 .footer-middle a {
@@ -265,10 +415,11 @@ legend {
   letter-spacing: 3.6px;
   text-align: left;
   color: #ffffff;
-  text-transform: none;
 }
 
-section.map p {
+
+
+.map-p {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 1.33;
@@ -307,15 +458,19 @@ section.map p {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: 2.4;
+  line-height: 2.0;
   letter-spacing: 0.2px;
   text-align: left;
   color: #ffffff;
-  text-transform: none;
+}
+
+.user-menu-footer li {
   list-style: none;
+  text-transform: capitalize;
 }
 
 .user-menu-footer a:hover {
+  opacity: 0.6;
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -324,7 +479,7 @@ section.map p {
   line-height: 2;
   letter-spacing: 0.2px;
   text-align: left;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .user-menu-footer a:focus {
@@ -340,8 +495,20 @@ section.map p {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.user-menu-footer a:active {
+  opacity: 0.3;
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.3);
+}
 
-address {
+.address-work {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -352,6 +519,31 @@ address {
   text-align: left;
   color: #ffffff;
   text-transform: none;
+}
+
+site-navigation-footer li {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #ffffff;
+
+}
+
+site-navigation-footer a {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
 }
 
 .footer-middle a {
@@ -388,7 +580,7 @@ address {
 }
 
 
-form label {
+.write-form {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
