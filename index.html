@@ -6,14 +6,14 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="inner-page">
+  <body>
     <header class="main-header">
       <a>
         <img src="img/logo-device.svg" width="163" height="35" alt="Логотип «Device»" class="logo">
       </a>
       <section class="search">
         <form action="https://echo.htmlacademy.ru" method="get">
-       <input type="text" placeholder="Поиск по сайту" value="">
+       <input type="text" class="search-field" placeholder="Поиск по сайту" value="">
        <button class="button-search" type="submit" name="button">Найти</button>
        </form>
      </section>
@@ -49,7 +49,7 @@
         <a href="#">
             <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул.Строителей 15, Санкт-Петербург">
           </a>
-          <a href="#">Напишите нам</a>
+          <a href="#" class="write-us-field">Напишите нам</a>
         </section>
     </main>
     <footer class="main-footer">
@@ -90,16 +90,16 @@
   <section class="write">
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label for="write-name">Ваше имя:</label>
-      <input id="write-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        <label class="write-label" for="write-name">Ваше имя:</label>
+      <input class="write-field" id="write-name" type="text" name="name" placeholder="Имя Фамилия">
     </p>
     <p>
-      <label for="write-email">Ваш e-mail:</label>
-      <input id="write-email" type="text" name="e-mail" value="" placeholder="email@example.com">
+      <label class="write-label" for="write-email">Ваш e-mail:</label>
+      <input class="write-field" id="write-email" type="email" name="e-mail" value="" placeholder="email@example.com">
     </p>
     <p>
-      <label for="write-text">Текст письма:</label>
-      <textarea id="write-text" name="text" rows="8" cols="50" value="" placeholder="Текст в свободной форме"></textarea>
+      <label class="write-label" for="write-text">Текст письма:</label>
+      <textarea class="write-field" id="write-text" name="text" rows="8" cols="50" placeholder="Текст в свободной форме"></textarea>
     </p>
       <button class="button" type="submit">Отправить</button>
       <button class="modal-close" type="button"></button>
