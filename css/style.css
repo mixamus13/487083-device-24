@@ -114,7 +114,7 @@ a {
 
 .button-search:focus,
 .button-search:active {
-  background: #000000;
+  background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -128,39 +128,34 @@ a {
   letter-spacing: 3.6px;
   color: #000000;
   text-transform: uppercase;
+  list-style: none;
+}
+
+.site-navigation a {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.site-navigation a:hover {
+  opacity: 0.6;
+}
+
+.site-navigation a:focus,
+.site-navigation a:active {
+  opacity: 0.3;
 }
 
 .user-menu,
 .site-navigation {
   list-style: none;
-}
-
-.user-menu a:hover {
-  opacity: 0.6;
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: 0.2px;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.user-menu a:focus {
-  opacity: 0.3;
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: 0.2px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.site-navigation a:focus {
-  opacity: 0.3;
 }
 
 .user-menu a {
@@ -176,24 +171,12 @@ a {
   list-style: none;
 }
 
-.site-navigation a {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 3.6px;
-  color: #000000;
-  list-style: none;
-}
-
-.site-navigation a:hover {
+.user-menu a:hover {
   opacity: 0.6;
 }
 
-.site-navigation a:focus,
-.site-navigation a:active {
+.user-menu a:focus,
+.user-menu a:active{
   opacity: 0.3;
 }
 
@@ -212,7 +195,7 @@ a {
   list-style: none;
 }
 
-.about-us p{
+.description-about-us {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -223,7 +206,7 @@ a {
   text-transform: none;
 }
 
-.about-us-h {
+.about {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -233,18 +216,6 @@ a {
   letter-spacing: 0.47px;
   color: #000000;
   text-transform: none;
-}
-
-.about-us a {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 3.6px;
-  color: #000000;
-  background: #f0c52e;
 }
 
 .contacts-map {
@@ -263,12 +234,12 @@ a {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  line-height: 2.5;
+  line-height: 40px;
   color: #000000;
   text-transform: none;
 }
 
-.container-1 {
+.container-headline {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -291,12 +262,21 @@ a {
   opacity: 0.3;
   text-transform: none;
   list-style: none;
-  
+
 }
 
 .breadcrumbs a {
   text-decoration: none;
   color: #000000;
+}
+
+.category-catalog:hover {
+  opacity: 0.6;
+}
+
+.category-catalog:focus,
+.category-catalog:active {
+  opacity: 0.1;
 }
 
 .color,
@@ -310,11 +290,6 @@ a {
   letter-spacing: 0.18px;
   color: #000000;
   text-transform: none;
-}
-
-.to-show {
-  background: #f0c52e;
-  border: none;
 }
 
 .filter-checkbox,
@@ -331,16 +306,8 @@ a {
   list-style: none;
 }
 
-.category-catalog {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.2px;
-  color: #000000;
-  text-transform: none;
+.catalog-list {
+  list-style: none;
 }
 
 .catalog-item {
@@ -353,9 +320,10 @@ a {
   letter-spacing: 0.2px;
   color: #000000;
   list-style: none;
-  text-transform: capitalize;
+  text-transform: none;
   text-decoration: none;
 }
+
 .catalog-item-price {
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 16px;
@@ -365,20 +333,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.2px;
   color: #464646;
-  text-transform: capitalize;
-}
-
-.carbage {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 24px;
-  letter-spacing: 3.6px;
-  color: #000000;
-  text-transform: uppercase;
-  background: #f0c52e;
+  text-transform: none;
 }
 
 .add-compare {
@@ -393,20 +348,27 @@ a {
   color: #000000;
 }
 
-.logo-down:hover {
+.add-compare:hover {
+  opacity: 1.0;
+}
+
+.add-compare:focus,
+.add-compare:active {
+  opacity: 0.2;
+}
+
+.logo-device:hover {
   width: 163px;
   height: 35px;
   object-fit: contain;
   opacity: 0.6;
 }
 
-.logo-down:focus {
+.logo-device:focus,
+.logo-device:active {
   opacity: 0.3;
 }
 
-.logo-down:active {
-  opacity: 0.3;
-}
 
 .footer-middle a {
   font-family: 'opensanslight', Arial, sans-serif;
@@ -420,7 +382,7 @@ a {
   text-transform: none;
 }
 
-.map-p {
+.map-map {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 1.33;
@@ -440,17 +402,12 @@ a {
   color: #000000;
 }
 
-.write-us-field {
-  background: #f0c52e;
-}
-
 .main-footer {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
   color: #000000;
-
   width: 1440px;
   height: 550px;
   background-color: #464646;
@@ -469,43 +426,16 @@ a {
 
 .user-menu-footer li {
   list-style: none;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .user-menu-footer a:hover {
-  opacity: 0.6;
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: 0.2px;
-  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
 }
 
-.user-menu-footer a:focus {
-  opacity: 0.3;
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: 0.2px;
-  color: rgba(255, 255, 255, 0.3);
-}
-
+.user-menu-footer a:focus,
 .user-menu-footer a:active {
   opacity: 0.3;
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: 0.2px;
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .address-work {
@@ -557,7 +487,7 @@ a {
   text-decoration: none;
 }
 
-.footer-social ul {
+.footer-social {
   list-style: none;
 }
 
@@ -566,7 +496,7 @@ a {
 }
 
 .write-label {
-font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
@@ -585,14 +515,15 @@ font-family: 'gilroyextrabold', Arial, sans-serif;
   font-stretch: normal;
   line-height: 1.29;
   letter-spacing: normal;
-  color: rgba(70, 70, 70, 0.4);
+  resize: none;
+  color: #f2f2f2;
   background-color: #f2f2f2;
   border: 3px solid #f2f2f2;
 }
 
 .write-field:hover {
-  background-color: #f2f2f2;
-  border: 3px solid #f2f2f2;
+  background-color: #eaeaea;
+  border: 3px solid #eaeaea;
 }
 
 .write-field:focus,
@@ -608,20 +539,27 @@ font-family: 'gilroyextrabold', Arial, sans-serif;
   border: 3px solid #f6dada;
 }
 
-textarea {
-  resize: none;
-}
-
-.button {
+.button-yellow,
+.button-yellow-b {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.33;
+  line-height: 24px;
   letter-spacing: 3.6px;
   color: #000000;
   text-transform: uppercase;
   background: #f0c52e;
   border: none;
+}
+
+.button-yellow:hover {
+  background: #f0c52e;
+}
+
+.button-yellow:focus,
+.button-yellow:active {
+  color: rgba(0, 0, 0, 0.3);
+  background: #f0c52e;
 }
