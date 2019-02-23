@@ -7,31 +7,40 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <a>
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип «Device»" class="logo-device">
+        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип «Device»" class="logo-device-header">
       </a>
       <section class="search">
         <form action="https://echo.htmlacademy.ru" method="get">
-       <input type="text" class="search-field" placeholder="Поиск по сайту" value="">
-       <button class="button-search" type="submit" name="button">Найти</button>
-       </form>
-     </section>
-      <ul class="user-menu">
-         <li><a href="#">Войти</a></li>
-         <li><a href="#">Сравнить</a></li>
-         <li><a href="#">Корзина</a></li>
-         </ul>
+          <input type="text" class="search-field" placeholder="Поиск по сайту" value="">
+          <button class="button-search" type="submit" name="button">Найти</button>
+        </form>
+        <ul class="user-menu">
+           <li><a class="login-link" href="#">Войти</a></li>
+           <li><a class="compare-link" href="#">Сравнить</a></li>
+           <li><a class="basket-link" href="#">Корзина</a></li>
+        </ul>
+      </section>
       <nav>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a class="catalog-link" href="catalog.html">Каталог товаров</a>
+          <ul class="products">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+          </ul>
+      </li>
+        <li><a class="delivery-link" href="#">Доставка</a></li>
+        <li><a class="warranty-link" href="#">Гарантия</a></li>
+        <li><a class="contacts-link" href="#">Контакты</a></li>
       </ul>
     </nav>
     </header>
-    <main class="container">
+    <main class="main">
       <section class="about-us">
         <h2 class="about">О нас</h2>
         <p class="description-about-us">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -54,20 +63,20 @@
     </main>
     <footer class="main-footer">
        <a>
-          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device" class="logo-device">
+          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device" class="logo-device-footer">
        </a>
       <ul class="user-menu-footer">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li><a class="login-link-footer" href="#">Войти</a></li>
+        <li><a class="compare-link-footer" href="#">Сравнить</a></li>
+        <li><a class="basket-link-footer" href="#">Корзина</a></li>
       </ul>
-        <address class="address-work">г. Москва, ул. Строителей, 15</address>
-      <div class="footer-middle">
-        <ul class="site-navigation-footer">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <div class="footer-middle">
+          <address class="address-work">г. Москва, ул. Строителей, 15</address>
+            <ul class="site-navigation-footer">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
         <a href="tel.:+7(495)495-95-95">Тел.: +7(495)495-95-95</a>
       </div>
         <div class="footer-social">

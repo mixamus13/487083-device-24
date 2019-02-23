@@ -30,6 +30,13 @@
   font-style: normal;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -39,19 +46,34 @@ body {
   color: #000000;
   text-transform: none;
   padding: 0;
-  width: 1440px;
-  height: 2795px;
+  min-width: 1160px;
 }
 
 a {
   text-decoration: none;
 }
 
-.main-header {
+.container {
   width: 1160px;
-  height: 550px;
+  margin: 0 auto;
+}
+
+.logo-device-header {
+  margin-top: -17px;
+  margin-bottom: 36px;
+}
+
+
+.main-header {
   background-color: #f7e296;
-  min-height: 299px;
+  padding: 0 60px;
+  margin-top: 40px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo:hover {
@@ -136,7 +158,6 @@ a {
   text-transform: none;
   list-style: none;
 
-  margin: 20px 100px;
   display: inline-block;
 }
 
@@ -147,6 +168,17 @@ a {
 .user-menu a:focus,
 .user-menu a:active{
   opacity: 0.3;
+}
+
+.compare-link {
+  margin-right: 41px;
+}
+.login-link {
+  margin-right: 218px;
+}
+
+.profile-link {
+  margin-right: 20px;
 }
 
 .site-navigation {
@@ -163,6 +195,7 @@ a {
 
   display: flex;
   padding: 0;
+  align-items: baseline;
 }
 
 .site-navigation a {
@@ -178,7 +211,6 @@ a {
   list-style: none;
 
   display: inline-block;
-  margin: 0 70px;
 }
 
 .site-navigation a:hover {
@@ -188,6 +220,18 @@ a {
 .site-navigation a:focus,
 .site-navigation a:active {
   opacity: 0.3;
+}
+
+.catalog-link {
+  margin-right: 294px;
+}
+
+.delivery-link {
+  margin-right: 38px;
+}
+
+.warranty-link {
+  margin-right: 114px;
 }
 
 .user-menu,
@@ -421,14 +465,38 @@ a {
   line-height: 24px;
   font-weight: 800;
   color: #000000;
-  width: 1440px;
-  height: 550px;
+  min-width: 1440px;
+  min-height: 323px;
   background-color: #464646;
+
+  display: inline-block}
+
+.logo-device-footer {
+  display: flex;
+  padding: 0;
+  justify-content: start;
+  vertical-align: baseline;
+  border: 1px solid green;
 }
 
 .user-menu-footer {
   display: flex;
   padding: 0;
+  justify-content: flex-end;
+  vertical-align: baseline;
+  border: 1px solid red;
+}
+
+.basket-link-footer {
+  margin-right: 140px;
+}
+
+.compare-link-footer {
+  margin-right: 41px;
+}
+
+.login-link-footer {
+  margin-right: 44px;
 }
 
 .user-menu-footer a {
@@ -440,8 +508,6 @@ a {
   line-height: 2.0;
   letter-spacing: 0.2px;
   color: #ffffff;
-
-  margin: 20px 100px;
 }
 
 .user-menu-footer li {
@@ -480,8 +546,6 @@ a {
   letter-spacing: 3.6px;
   color: #ffffff;
   text-transform: uppercase;
-
-  margin: 0 150px;
 }
 
 .site-navigation-footer {
