@@ -475,16 +475,19 @@ a {
   display: flex;
   padding: 0;
   justify-content: start;
-  vertical-align: baseline;
-  border: 1px solid green;
+  align-items: baseline;
+  margin-top: 65px;
+  margin-left: 139px;
+
 }
 
 .user-menu-footer {
   display: flex;
   padding: 0;
   justify-content: flex-end;
-  vertical-align: baseline;
-  border: 1px solid red;
+  align-items: baseline;
+  margin-top: -35px;
+
 }
 
 .basket-link-footer {
