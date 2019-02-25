@@ -8,111 +8,121 @@
   </head>
   <body>
     <header class="main-header container">
-      <a>
+        <a>
         <img src="img/logo-device.svg" width="163" height="35" alt="Логотип «Device»" class="logo-device-header">
-      </a>
+        </a>
       <section class="search">
         <form action="https://echo.htmlacademy.ru" method="get">
           <input type="text" class="search-field" placeholder="Поиск по сайту" value="">
           <button class="button-search" type="submit" name="button">Найти</button>
         </form>
-        <ul class="user-menu">
-           <li><a class="login-link" href="#">Войти</a></li>
-           <li><a class="compare-link" href="#">Сравнить</a></li>
-           <li><a class="basket-link" href="#">Корзина</a></li>
-        </ul>
+            <ul class="user-menu">
+            <li><a class="login-link" href="#">Войти</a></li>
+            <li><a class="compare-link" href="#">Сравнить</a></li>
+            <li><a class="basket-link" href="#">Корзина</a></li>
+          </ul>
       </section>
       <nav>
-      <ul class="site-navigation">
-        <li><a class="catalog-link" href="catalog.html">Каталог товаров</a>
-          <ul class="products">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-          </ul>
-      </li>
-        <li><a class="delivery-link" href="#">Доставка</a></li>
-        <li><a class="warranty-link" href="#">Гарантия</a></li>
-        <li><a class="contacts-link" href="#">Контакты</a></li>
-      </ul>
-    </nav>
+        <ul class="site-navigation">
+          <li><a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <ul class="products">
+              <div class="products-1">
+                <li><a class="virt-r" href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a class="qadro" href="#">Квадрокоптеры</a></li>
+              </div>
+              <div class="products-2">
+                <li><a class="monopod" href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </div>
+              <div class="products-3">
+                <li><a href="#">Экшн-камеры</a></li>
+              </div>
+            </ul>
+          </li>
+          <li><a class="delivery-link" href="#">Доставка</a></li>
+          <li><a class="warranty-link" href="#">Гарантия</a></li>
+          <li><a class="contacts-link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
-      <section class="about-us">
-        <h2 class="about">О нас</h2>
-        <p class="description-about-us">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="description-about-us">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="transport">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
+      <div class="main-about container">
+        <section class="about-us">
+          <h2 class="about about-1">О нас</h2>
+          <p class="description-about-us description-about-1">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="description-about-us description-about-2">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="transport">
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
           <a href="more-about-us.html" class="button-yellow">Подробнее о нас</a>
-      </section>
-      <section class="map">
-        <h2 class="contacts-map">Контакты</h2>
-        <p class="map-map">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="#">
-            <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул.Строителей 15, Санкт-Петербург">
+        </section>
+        <section class="map">
+          <h2 class="contacts-map contacts-map-1">Контакты</h2>
+          <p class="map-map map-map-1">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a href="#">
+            <img class="office-device" src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул.Строителей 15, Санкт-Петербург">
           </a>
           <a href="#" class="button-yellow">Напишите нам</a>
         </section>
+      </div>
     </main>
     <footer class="main-footer">
-       <a>
-          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device" class="logo-device-footer">
-       </a>
-      <ul class="user-menu-footer">
-        <li><a class="login-link-footer" href="#">Войти</a></li>
-        <li><a class="compare-link-footer" href="#">Сравнить</a></li>
-        <li><a class="basket-link-footer" href="#">Корзина</a></li>
-      </ul>
-        <div class="footer-middle">
+        <div class="footer-top container">
+          <a>
+            <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device" class="logo-device-footer">
+          </a>
+          <ul class="user-menu-footer">
+            <li><a class="login-link-footer" href="#">Войти</a></li>
+            <li><a class="compare-link-footer" href="#">Сравнить</a></li>
+            <li><a class="basket-link-footer" href="#">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle container">
           <address class="address-work">г. Москва, ул. Строителей, 15</address>
             <ul class="site-navigation-footer">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a class="delivery-link-footer" href="#">Доставка</a></li>
+              <li><a class="warranty-link-footer" href="#">Гарантия</a></li>
+              <li><a class="contacts-link-footer" href="#">Контакты</a></li>
             </ul>
-        <a href="tel.:+7(495)495-95-95">Тел.: +7(495)495-95-95</a>
-      </div>
-        <div class="footer-social">
-          <ul class="social-buttons">
-            <li><a class="social-btn-facebook" href="#">Фейсбук</a></li>
-            <li><a class="social-btn-instagram" href="#">Инстаграм</a></li>
-            <li><a class="social-btn-twitter" href="#">Твитер</a></li>
-          </ul>
-      </div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип Академии">
-      </a>
+          <a class="tel" href="tel.:+7(495)495-95-95">Тел.: +7(495)495-95-95</a>
+        </div>
+        <div class="footer-social container">
+            <ul class="social-buttons">
+              <li><a class="social-btn-facebook" href="#">Фейсбук</a></li>
+              <li><a class="social-btn-instagram" href="#">Инстаграм</a></li>
+              <li><a class="social-btn-twitter" href="#">Твитер</a></li>
+            </ul>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="logo-academ" src="img/logo-html.svg" width="27" height="35" alt="Логотип Академии">
+          </a>
+        </div>
     </footer>
     <section>
       <a href="#">
         <img src="img/map-big.jpg" width="999" height="598" alt="Офис компании по адресу ул.Строителей 15, Санкт-Петербург">
       </a>
       <button class="modal-close" type="button"></button>
-  </section>
-  <section class="write">
-    <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label class="write-label" for="write-name">Ваше имя:</label>
-      <input class="write-field" id="write-name" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p>
-      <label class="write-label" for="write-email">Ваш e-mail:</label>
-      <input class="write-field" id="write-email" type="email" name="e-mail" value="" placeholder="email@example.com">
-    </p>
-    <p>
-      <label class="write-label" for="write-text">Текст письма:</label>
-      <textarea class="write-field" id="write-text" name="text" rows="8" cols="50" placeholder="Текст в свободной форме"></textarea>
-    </p>
-      <button class="button-yellow" type="submit">Отправить</button>
-      <button class="modal-close" type="button"></button>
-    </form>
+    </section>
+    <section class="write">
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="write-label" for="write-name">Ваше имя:</label>
+        <input class="write-field" id="write-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="write-label" for="write-email">Ваш e-mail:</label>
+          <input class="write-field" id="write-email" type="email" name="e-mail" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="write-label" for="write-text">Текст письма:</label>
+          <textarea class="write-field" id="write-text" name="text" rows="8" cols="50" placeholder="Текст в свободной форме"></textarea>
+        </p>
+          <button class="button-yellow" type="submit">Отправить</button>
+          <button class="modal-close" type="button"></button>
+      </form>
     </section>
   </body>
 </html>

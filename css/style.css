@@ -74,6 +74,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 54px;
 }
 
 .logo:hover {
@@ -144,6 +145,7 @@ a {
 .user-menu {
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 .user-menu a {
@@ -194,8 +196,9 @@ a {
   list-style: none;
 
   display: flex;
-  padding: 0;
   align-items: baseline;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
@@ -224,6 +227,7 @@ a {
 
 .catalog-link {
   margin-right: 294px;
+  margin-bottom: 37px;
 }
 
 .delivery-link {
@@ -250,8 +254,44 @@ a {
   color: #000000;
   text-transform: none;
 }
+
 .products {
+  display: inline-block;
   list-style: none;
+  padding: 0;
+}
+
+.products-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.products-3 {
+  justify-content: flex-start;
+}
+
+.monopod {
+  margin-right: 83px;
+}
+
+.virt-r {
+  margin-right: 58px;
+}
+
+.qadro {
+  margin-left: 40px;
+}
+
+.main-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 98px;
 }
 
 .description-about-us {
@@ -263,6 +303,16 @@ a {
   line-height: 2;
   color: #464646;
   text-transform: none;
+
+  margin: 0;
+}
+
+.description-about-1 {
+  margin-bottom: 40px;
+}
+
+.description-about-2 {
+  margin-bottom: 60px
 }
 
 .about {
@@ -275,6 +325,12 @@ a {
   letter-spacing: 0.47px;
   color: #000000;
   text-transform: none;
+
+  margin: 0;
+}
+
+.about-1 {
+  margin-bottom: 59px;
 }
 
 .contacts-map {
@@ -287,6 +343,12 @@ a {
   letter-spacing: 0.47px;
   color: #000000;
   text-transform: none;
+
+  margin: 0;
+}
+
+.contacts-map-1 {
+  margin-bottom: 59px;
 }
 
 .transport {
@@ -296,6 +358,15 @@ a {
   line-height: 40px;
   color: #000000;
   text-transform: none;
+
+  margin: 0;
+  margin-bottom: 82px;
+  padding-left: 18px;  /* Сам вычислял */
+}
+
+.office-device {
+  margin-top: 5px;
+  margin-bottom: 85px;
 }
 
 .container-headline {
@@ -308,6 +379,13 @@ a {
   letter-spacing: 0.5px;
   color: #000000;
   text-transform: none;
+
+  margin: 0;
+
+  display: flex;
+  margin-top: 44px;
+  margin-left: 210px;
+  margin-bottom: 29px;
 }
 
 .breadcrumbs {
@@ -322,6 +400,12 @@ a {
   text-transform: none;
   list-style: none;
 
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  margin-left: 210px;
+  justify-content: stretch;
 }
 
 .breadcrumbs a {
@@ -365,11 +449,18 @@ a {
   list-style: none;
 }
 
+.catalog {
+  display: flex;
+}
+
 .catalog-list {
   list-style: none;
 }
 
-.catalog-item {
+.catalog-item-1,
+.catalog-item-2,
+.catalog-item-3,
+.catalog-item-4 {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -382,6 +473,8 @@ a {
   text-transform: none;
   text-decoration: none;
 }
+
+
 
 .catalog-item-price {
   font-family: 'gilroylight', Arial, sans-serif;
@@ -426,7 +519,6 @@ a {
   opacity: 0.3;
 }
 
-
 .footer-middle a {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
@@ -442,10 +534,16 @@ a {
 .map-map {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
-  line-height: 1.33;
+  line-height: 2;
   font-weight: 300;
   color: #464646;
   text-transform: none;
+
+  margin: 0;
+}
+
+.map-map-1 {
+  margin-bottom: 44px;
 }
 
 .map a {
@@ -465,42 +563,77 @@ a {
   line-height: 24px;
   font-weight: 800;
   color: #000000;
-  min-width: 1440px;
   min-height: 323px;
   background-color: #464646;
 
-  display: inline-block}
+  padding-top: 65px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
 
 .logo-device-footer {
-  display: flex;
-  padding: 0;
-  justify-content: start;
-  align-items: baseline;
-  margin-top: 65px;
-  margin-left: 139px;
 
 }
 
 .user-menu-footer {
   display: flex;
-  padding: 0;
-  justify-content: flex-end;
-  align-items: baseline;
-  margin-top: -35px;
-
+  margin: 0;
+  margin-bottom: 52px;
 }
 
 .basket-link-footer {
-  margin-right: 140px;
+
 }
 
 .compare-link-footer {
   margin-right: 41px;
+
+}
+
+.profile-link-footer {
+  margin-right: 20px;
 }
 
 .login-link-footer {
   margin-right: 44px;
+
 }
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 71px;
+}
+
+.site-navigation-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-link-footer {
+  margin-right: 38px;
+}
+
+.warranty-link-footer {
+  margin-right: 38px;
+}
+
+.contacts-link-footer {
+  margin-right: 206px;
+}
+
+.tel {
+  margin: 0;
+}
+
+.address-work {
+  margin-right: 155px; /* Родной параметр margin-right: 166px; , но при нём телефон и адрес становятся в 2 строчки */
+}
+
 
 .user-menu-footer a {
   font-family: 'opensanslight', Arial, sans-serif;
@@ -511,6 +644,8 @@ a {
   line-height: 2.0;
   letter-spacing: 0.2px;
   color: #ffffff;
+
+  display: inline-block;
 }
 
 .user-menu-footer li {
@@ -555,6 +690,7 @@ a {
   list-style: none;
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 .site-navigation-footer a:hover {
@@ -580,10 +716,32 @@ a {
 
 .footer-social {
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-btn-twitter {
+  margin-right: 383px; /* Должно быть 483px */
+}
+
+.social-btn-instagram {
+  margin-right: 22px;
+}
+
+.social-btn-facebook {
+  margin-right: 22px;
 }
 
 .social-buttons {
   color: #464646;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-academ {
+
 }
 
 .write-label {
