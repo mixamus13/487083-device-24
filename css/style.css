@@ -413,6 +413,16 @@ a {
   color: #000000;
 }
 
+.color-catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.category-catalog {
+  margin-right: 35px;
+}
+
 .category-catalog:hover {
   opacity: 0.6;
 }
@@ -454,6 +464,13 @@ a {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 947px;
+  padding: 0;
+  margin: 0;
+;
+
   list-style: none;
 }
 
@@ -472,6 +489,11 @@ a {
   list-style: none;
   text-transform: none;
   text-decoration: none;
+
+  width: 360px;
+  height: 380px;
+  margin-right: 40px;
+  margin-bottom: 100px;
 }
 
 
