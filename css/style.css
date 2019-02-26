@@ -307,12 +307,17 @@ a {
   margin: 0;
 }
 
+.about-us {
+  width: 472px;
+
+}
+
 .description-about-1 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .description-about-2 {
-  margin-bottom: 60px
+  margin-bottom: 66px;
 }
 
 .about {
@@ -327,28 +332,7 @@ a {
   text-transform: none;
 
   margin: 0;
-}
-
-.about-1 {
-  margin-bottom: 59px;
-}
-
-.contacts-map {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.02;
-  letter-spacing: 0.47px;
-  color: #000000;
-  text-transform: none;
-
-  margin: 0;
-}
-
-.contacts-map-1 {
-  margin-bottom: 59px;
+  margin-bottom: 43px;
 }
 
 .transport {
@@ -358,18 +342,21 @@ a {
   line-height: 40px;
   color: #000000;
   text-transform: none;
+  list-style: none;
 
   margin: 0;
-  margin-bottom: 82px;
-  padding-left: 18px;  /* Сам вычислял */
+  margin-bottom: 63px;
+  padding-left: 37px;
 }
+
+
 
 .office-device {
   margin-top: 5px;
-  margin-bottom: 85px;
+  margin-bottom: 72px;
 }
 
-.container-headline {
+.headline {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -380,12 +367,10 @@ a {
   color: #000000;
   text-transform: none;
 
-  margin: 0;
-
   display: flex;
   margin-top: 44px;
-  margin-left: 210px;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
+  margin-left: 61px;
 }
 
 .breadcrumbs {
@@ -404,8 +389,7 @@ a {
   padding: 0;
 
   display: flex;
-  margin-left: 210px;
-  justify-content: stretch;
+  margin-left: 60px;
 }
 
 .breadcrumbs a {
@@ -420,7 +404,17 @@ a {
 }
 
 .category-catalog {
-  margin-right: 35px;
+  margin-right: 38px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.catalog-item-2 .category-catalog {
+  width: 237px;
+}
+
+.catalog-item-4 .category-catalog {
+  width: 222px;
 }
 
 .category-catalog:hover {
@@ -461,6 +455,7 @@ a {
 
 .catalog {
   display: flex;
+  flex-grow: 1;
 }
 
 .catalog-list {
@@ -469,6 +464,7 @@ a {
   width: 947px;
   padding: 0;
   margin: 0;
+  padding-left: 73px;
 ;
 
   list-style: none;
@@ -496,7 +492,19 @@ a {
   margin-bottom: 100px;
 }
 
+.catalog-content {
+  display: flex;
+}
 
+.filter {
+  width: 267px;
+  margin-left: auto;
+}
+
+.filter-container {
+  flex-grow: 1;
+  background-color: #ebebeb;
+}
 
 .catalog-item-price {
   font-family: 'gilroylight', Arial, sans-serif;
@@ -565,7 +573,11 @@ a {
 }
 
 .map-map-1 {
-  margin-bottom: 44px;
+  margin-bottom: 34px;
+}
+
+.map {
+  width: 560px;
 }
 
 .map a {
@@ -822,6 +834,11 @@ a {
   text-transform: uppercase;
   background: #f0c52e;
   border: none;
+  padding: 0 24px;
+}
+
+.map-button-yellow {
+  padding: 0 42px;
 }
 
 .button-yellow:hover {
