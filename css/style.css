@@ -242,7 +242,7 @@ a {
   top: 4px;
   left: 0;
 
-  background-image: url("../img/user.svg");  /* Доработать*/
+  background-image: url("../img/user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -678,7 +678,7 @@ a {
 
 .footer-middle a {
   font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;
+  font-size: 15px;  /*не могу выставить шрифт*/
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -727,7 +727,7 @@ a {
   min-height: 323px;
   background-color: #464646;
 
-  padding-top: 65px;
+  padding-top: 63px;
 }
 
 .footer-top {
@@ -736,64 +736,8 @@ a {
 }
 
 .logo-device-footer {
-
+  margin-top: 2px;
 }
-
-.user-menu-footer {
-  display: flex;
-  margin: 0;
-  margin-bottom: 52px;
-}
-
-.basket-link-footer {
-
-}
-
-.compare-link-footer {
-  margin-right: 41px;
-
-}
-
-.profile-link-footer {
-  margin-right: 20px;
-}
-
-.login-link-footer {
-  margin-right: 44px;
-}
-
-.footer-middle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 71px;
-}
-
-.site-navigation-footer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.delivery-link-footer {
-  margin-right: 38px;
-}
-
-.warranty-link-footer {
-  margin-right: 38px;
-}
-
-.contacts-link-footer {
-  margin-right: 206px;
-}
-
-.tel {
-  margin: 0;
-}
-
-.address-work {
-  margin-right: 155px; /* Родной параметр margin-right: 166px; , но при нём телефон и адрес становятся в 2 строчки */
-}
-
 
 .user-menu-footer a {
   font-family: 'opensanslight', Arial, sans-serif;
@@ -806,6 +750,144 @@ a {
   color: #ffffff;
 
   display: inline-block;
+}
+
+.user-menu-footer {
+  display: flex;
+  margin: 0;
+  margin-bottom: 52px;
+  padding: 0;
+}
+
+.basket-link-footer {
+  margin-right: -2px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.basket-link-footer::before {
+  content: '';
+
+  position: absolute;
+  width: 12px;
+  height: 12px;
+
+  top: 9px;
+  left: 2px;
+
+  background-image: url("../img/cart-color.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
+}
+
+.compare-link-footer {
+  margin-right: 39px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.compare-link-footer::before {
+  content: "";
+
+  position: absolute;
+  width: 10px;
+  height: 10px;
+
+  top: 11px;
+  left: 3px;
+
+  background-image: url("../img/compare-color.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
+}
+
+.profile-link-footer {
+  margin-right: 14px;
+  padding-left: 26px;
+  position: relative;
+}
+
+.profile-link-footer::before {
+  content: "";
+
+  position: absolute;
+  width: 16px;
+  height: 18px;
+
+  top: 9px;
+  left: -1px;
+
+  background-image: url("../img/user-color.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login-link-in-footer {
+  margin-right: 41px;
+  padding-left: 27px;
+  position: relative;
+}
+
+.login-link-in-footer::before {
+  content: "";
+
+  position: absolute;
+  width: 13px;
+  height: 12px;
+
+  top: 9px;
+  left: 2px;
+
+  background-image: url("../img/user-color.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
+}
+
+.login-link-out-footer {
+  margin-right: 40px;
+}
+
+.footer-top {
+  margin-bottom: -15px;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 62px;
+}
+
+.site-navigation-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.delivery-link-footer {
+  margin-right: 33px;
+}
+
+.warranty-link-footer {
+  margin-right: 33px;
+}
+
+.contacts-link-footer {
+  margin-right: 200px;
+}
+
+.tel {
+  margin: 0;
+}
+
+.address-work {
+  margin-right: 155px;
 }
 
 .user-menu-footer li {
@@ -847,10 +929,18 @@ a {
 }
 
 .site-navigation-footer {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
   list-style: none;
   display: flex;
   padding: 0;
   margin: 0;
+  margin-bottom: -6px;
 }
 
 .site-navigation-footer a:hover {
@@ -882,15 +972,18 @@ a {
 }
 
 .social-btn-twitter {
-  margin-right: 383px; /* Должно быть 483px */
+  margin-right: 383px;
+  opacity: 0.3;
 }
 
 .social-btn-instagram {
   margin-right: 22px;
+  opacity: 0.3;
 }
 
 .social-btn-facebook {
   margin-right: 22px;
+  opacity: 0.3;
 }
 
 .social-buttons {
@@ -898,10 +991,8 @@ a {
   margin: 0;
   display: flex;
   justify-content: center;
-}
-
-.logo-academ {
-
+  align-items: center;
+  margin-right: 100px;
 }
 
 .write-label {
@@ -975,4 +1066,37 @@ a {
 .button-yellow:active {
   color: rgba(0, 0, 0, 0.3);
   background: #f0c52e;
+}
+
+.logo-academ:hover {
+  opacity: 0.6;
+}
+
+.logo-academ:focus,
+.logo-academ:active {
+  opacity: 0.3;
+}
+
+.logo-device-footer:hover {
+  opacity: 0.6;
+}
+
+.logo-device-footer:focus,
+.logo-device-footer:active {
+  opacity: 0.3;
+}
+
+.social-btn-facebook:hover,
+.social-btn-instagram:hover,
+.social-btn-twitter:hover {
+  opacity: 0.6;
+}
+
+.social-btn-facebook:focus,
+.social-btn-instagram:focus,
+.social-btn-twitter:focus,
+.social-btn-facebook:active,
+.social-btn-instagram:active,
+.social-btn-twitter:active {
+  opacity: 0.3;
 }
