@@ -597,6 +597,11 @@ a {
   list-style: none;
 }
 
+.in-carbage,
+.add-compare {
+  display: none; /*временно скрытые Добавить к сравнению и корзина*/
+}
+
 .catalog-item-1,
 .catalog-item-2,
 .catalog-item-3,
@@ -1052,6 +1057,7 @@ a {
   background: #f0c52e;
   border: none;
   padding: 0 24px;
+  display: none; /*временно скрытые корзины*/
 }
 
 .map-button-yellow {
