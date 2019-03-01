@@ -515,8 +515,31 @@ a {
   padding: 0;
 
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-left: 60px;
   margin-bottom: 45px;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 40px;
+}
+
+.category-catalog:after {
+  content: '';
+
+  position: absolute;
+  width: 13px;
+  height: 13px;
+
+  top: 9px;
+  right: -31px;
+  background-image: url("../img/nav-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
 }
 
 .breadcrumbs a {
@@ -531,7 +554,7 @@ a {
 }
 
 .category-catalog {
-  margin-right: 38px;
+  margin-right: -2px;
   display: inline-block;
   vertical-align: top;
 }
