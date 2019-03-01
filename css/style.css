@@ -418,6 +418,7 @@ a {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 98px;
+  margin-top: 21px; /*временный отступ*/
 }
 
 .description-about-us {
@@ -459,6 +460,22 @@ a {
 
   margin: 0;
   margin-bottom: 43px;
+
+  padding-top: 51px;
+  position: relative;
+}
+
+.about:before {
+  content: '';
+
+  position: absolute;
+  width: 80px;
+  height: 7px;
+
+  top: -2px;
+  left: 2px;
+
+  background-color: #000000;
 }
 
 .transport {
@@ -890,6 +907,21 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 62px;
+
+  position: relative;
+}
+
+.footer-middle:after {
+  content: '';
+
+  position: absolute;
+  width: 80px;
+  height: 7px;
+
+  bottom: -84px;
+  left: 1px;
+
+  background-color: #f0c52e;
 }
 
 .site-navigation-footer {
@@ -943,6 +975,7 @@ a {
   color: #ffffff;
   text-transform: none;
 }
+
 
 .site-navigation-footer a {
   font-family: 'gilroyextrabold', Arial, sans-serif;
