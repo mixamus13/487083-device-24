@@ -56,11 +56,13 @@ a {
 .container {
   width: 1160px;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: content-box;
 }
 
 .logo-device-header {
-  margin-top: -17px;
-  margin-bottom: 15px;
+  margin-top: -21px;
+  margin-bottom: 17px;
 }
 
 
@@ -77,12 +79,12 @@ a {
   margin-bottom: 37px;
 }
 
-.logo:hover {
+.logo-device-header:hover {
   opacity: 0.6;
 }
 
-.logo:focus,
-.logo:active {
+.logo-device-header:focus,
+.logo-device-header:active {
   opacity: 0.3;
 }
 
@@ -122,6 +124,7 @@ a {
   opacity: 1;
 }
 
+/*
 .search-field:hover::placeholder {
   opacity: 0.6;
 }
@@ -130,7 +133,7 @@ a {
 .search-field:active::placeholder {
   opacity: 1;
 }
-
+*/
 .search-field:hover {
   opacity: 0.6;
 }
@@ -184,14 +187,42 @@ a {
   list-style: none;
 }
 
-.user-menu a:hover {
+.profile-link:hover {
   opacity: 0.6;
 }
 
-.user-menu a:focus,
-.user-menu a:active{
+.profile-link:focus,
+.profile-link:active{
   opacity: 0.3;
 }
+
+.compare-link:hover {
+  opacity: 0.6;
+}
+
+.compare-link:focus,
+.compare-link:active{
+  opacity: 0.3;
+}
+
+.basket-link:hover {
+  opacity: 0.6;
+}
+
+.basket-link:focus,
+.basket-link:active{
+  opacity: 0.3;
+}
+
+.login-link-in:hover {
+  opacity: 0.6;
+}
+
+.login-link-in:focus,
+.login-link-in:active{
+  opacity: 0.3;
+}
+
 
 .compare-link {
   margin-right: 38px;
@@ -224,6 +255,7 @@ a {
 
 .login-link-out {
   margin-right: 63px;
+  opacity: 0.3;
 }
 
 .profile-link {
@@ -302,6 +334,8 @@ a {
   align-items: baseline;
   margin: 0;
   padding: 0;
+
+  position: relative;
 }
 
 .site-navigation a {
@@ -329,10 +363,14 @@ a {
 }
 
 .catalog-link {
-  margin-right: 262px;
-  margin-bottom: 37px;
+  margin-right: 289px;
+  margin-bottom: 49px;
   padding-right: 32px;
   position: relative;
+}
+
+.catalog-link:hover + .products-list {
+  display: block;
 }
 
 .catalog-link::after {
@@ -385,6 +423,21 @@ a {
   display: inline-block;
   list-style: none;
   padding: 0;
+}
+
+.products-list {
+  display: none;
+  position: absolute;
+  background-color: #f7e296;
+  width: 1100px;
+  padding-left: 60px;
+  padding-bottom: 34px;
+
+
+  top: 43px;
+  left: -60px;
+
+  z-index: 1;
 }
 
 .products-1 {
@@ -465,7 +518,7 @@ a {
   position: relative;
 }
 
-.about:before {
+.about::before {
   content: '';
 
   position: absolute;
@@ -489,10 +542,26 @@ a {
 
   margin: 0;
   margin-bottom: 63px;
-  padding-left: 37px;
+  padding-left: 17px;
 }
 
+.transport li {
+  position: relative;
+  padding-left: 20px;
+}
 
+.transport li::before {
+  content: '';
+
+  position: absolute;
+  width: 8px;
+  height: 8px;
+
+  top: 16px;
+  left: -15px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
 
 .office-device {
   margin-top: 5px;
@@ -543,7 +612,7 @@ a {
   margin-right: 40px;
 }
 
-.category-catalog:after {
+.category-catalog::after {
   content: '';
 
   position: absolute;
@@ -896,6 +965,7 @@ a {
 
 .login-link-out-footer {
   margin-right: 40px;
+  opacity: 0.3;
 }
 
 .footer-top {
@@ -911,7 +981,7 @@ a {
   position: relative;
 }
 
-.footer-middle:after {
+.footer-middle::after {
   content: '';
 
   position: absolute;
@@ -919,7 +989,7 @@ a {
   height: 7px;
 
   bottom: -84px;
-  left: 1px;
+  left: 21px;
 
   background-color: #f0c52e;
 }
@@ -931,15 +1001,15 @@ a {
 }
 
 .delivery-link-footer {
-  margin-right: 33px;
+  margin-right: 34px;
 }
 
 .warranty-link-footer {
-  margin-right: 33px;
+  margin-right: 32px;
 }
 
 .contacts-link-footer {
-  margin-right: 200px;
+  margin-right: 190px;
 }
 
 .tel {
@@ -955,12 +1025,45 @@ a {
   text-transform: none;
 }
 
+/*
+
 .user-menu-footer a:hover {
   opacity: 0.7;
 }
 
 .user-menu-footer a:focus,
 .user-menu-footer a:active {
+  opacity: 0.3;
+}
+
+*/
+
+.login-link-out-footer {
+  opacity: 0.3;
+}
+
+.profile-link-footer,
+.compare-link-footer,
+.basket-link-footer,
+.login-link-in-footer {
+  opacity: 0.7;
+}
+
+.profile-link-footer:hover,
+.compare-link-footer:hover,
+.basket-link-footer:hover,
+.login-link-in-footer:hover {
+  opacity: 1;
+}
+
+.profile-link-footer:focus,
+.profile-link-footer:active,
+.compare-link-footer:focus,
+.compare-link-footer:active,
+.basket-link-footer:focus,
+.basket-link-footer:active,
+.login-link-in-footer:focus,
+.login-link-in-footer:active {
   opacity: 0.3;
 }
 
@@ -1113,8 +1216,22 @@ a {
   background: #f0c52e;
   border: none;
   padding: 0 24px;
-  display: none; /*временно скрытые корзины*/
+
+  /*position: relative;*/
 }
+
+/*.button-yellow::after {
+  content: '';
+
+  position: absolute;
+  width: 220px;
+  height: 7px;
+
+  top: 7px;
+  left: 20px;
+
+  background-color: #f0c52e;
+}*/
 
 .map-button-yellow {
   padding: 0 42px;
