@@ -491,6 +491,149 @@ a {
   margin-top: 21px;
 }
 
+
+.decorat-picture {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0;
+  width: 1160px;
+  height: 160px;
+  padding-bottom: 78px;
+  list-style: none;
+
+  margin-top: 350px; /*временный отступ*/
+}
+
+.popular-square {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+
+  width: 160px;
+  height: 160px;
+
+  position: relative;
+}
+
+.popular-square:before {
+  content: "";
+
+  position: absolute;
+  width: 160px;
+  height: 160px;
+
+  top: -193px;
+  left: 1px;
+
+  background-color: #f0c52e;
+  opacity: 0.5;
+}
+
+.popular-1:after {
+  content: "";
+
+  position: absolute;
+  width: 97px;
+  height: 55px;
+
+  top: -141px;
+  left: 32px;
+
+  background-image: url("../img/popular-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.popular-2:after {
+  content: "";
+
+  position: absolute;
+  width: 86px;
+  height: 117px;
+
+  top: -152px;
+  left: 39px;
+
+  background-image: url("../img/popular-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.popular-3:after {
+  content: "";
+
+  position: absolute;
+  width: 71px;
+  height: 87px;
+
+  top: -155px;
+  left: 50px;
+
+  background-image: url("../img/popular-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.popular-4:after {
+  content: "";
+
+  position: absolute;
+  width: 107px;
+  height: 65px;
+
+  top: -143px;
+  left: 29px;
+
+  background-image: url("../img/popular-4.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.popular-5:after {
+  content: "";
+
+  position: absolute;
+  width: 56px;
+  height: 98px;
+
+  top: -161px;
+  left: 56px;
+
+  background-image: url("../img/popular-5.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.popular-6:after {
+  content: "";
+
+  position: absolute;
+  width: 132px;
+  height: 69px;
+
+  top: -144px;
+  left: 14px;
+
+  background-image: url("../img/popular-6.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.popular-square:hover::before {
+  background-color: #f0c52e;
+  opacity: 1;
+}
+
+.popular-square:focus,
+.popular-square:active {
+  opacity: 0.3;
+}
+
 .description-about-us {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
