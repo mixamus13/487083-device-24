@@ -483,15 +483,6 @@ a {
   margin-left: 76px;
 }
 
-.main-about {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 98px;
-  margin-top: 21px;
-}
-
-
 .decorat-picture {
   display: flex;
   justify-content: space-between;
@@ -499,10 +490,9 @@ a {
   padding: 0;
   width: 1160px;
   height: 160px;
-  padding-bottom: 78px;
   list-style: none;
 
-  margin-top: 350px; /*временный отступ*/
+  margin-top: 350px;
 }
 
 .popular-square {
@@ -634,6 +624,14 @@ a {
   opacity: 0.3;
 }
 
+.main-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 98px;
+  margin-top: 21px;
+}
+
 .description-about-us {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
@@ -649,7 +647,6 @@ a {
 
 .about-us {
   width: 472px;
-
 }
 
 .description-about-1 {
