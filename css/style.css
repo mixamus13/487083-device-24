@@ -61,8 +61,8 @@ a {
 }
 
 .logo-device-header {
-  margin-top: -21px;
-  margin-bottom: 17px;
+  margin-top: -18px;
+  margin-bottom: 15px;
 }
 
 
@@ -76,7 +76,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .logo-device-header:hover {
@@ -100,6 +100,11 @@ a {
   background: none;
   border: none;
   opacity: 0.3;
+
+  padding-top: 4px;
+  padding-bottom: 5px;
+
+  outline: none;
 }
 
 .search{
@@ -124,16 +129,6 @@ a {
   opacity: 1;
 }
 
-/*
-.search-field:hover::placeholder {
-  opacity: 0.6;
-}
-
-.search-field:focus::placeholder,
-.search-field:active::placeholder {
-  opacity: 1;
-}
-*/
 .search-field:hover {
   opacity: 0.6;
 }
@@ -143,6 +138,13 @@ a {
   opacity: 1;
 }
 
+.search-field:focus + .button-search {
+  display: inline-block;
+}
+
+.search-field:active + .button-search {
+  display: inline-block;
+}
 
 .button-search {
   background: none;
@@ -155,6 +157,21 @@ a {
   line-height: 2;
   letter-spacing: 0.2px;
   color: #000000;
+  display: none;
+
+  position: relative;
+}
+
+.button-search::before {
+  content: "";
+
+  position: absolute;
+  width: 250px;
+  height: 2px;
+
+  top: 33px;
+  left: -195px;
+  background-color: #000000;
 }
 
 .button-search:hover {
@@ -225,7 +242,7 @@ a {
 
 
 .compare-link {
-  margin-right: 38px;
+  margin-right: 39px;
   padding-left: 22px;
   position: relative;
 }
@@ -364,7 +381,7 @@ a {
 
 .catalog-link {
   margin-right: 289px;
-  margin-bottom: 49px;
+  margin-bottom: 43px;
   padding-right: 32px;
   position: relative;
 }
@@ -422,7 +439,7 @@ a {
 .products {
   display: inline-block;
   list-style: none;
-  padding: 0;
+  padding: 1px;
 }
 
 .products-list {
@@ -463,7 +480,7 @@ a {
 }
 
 .qadro {
-  margin-left: 40px;
+  margin-left: 76px;
 }
 
 .main-about {
@@ -471,7 +488,7 @@ a {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 98px;
-  margin-top: 21px; /*временный отступ*/
+  margin-top: 21px;
 }
 
 .description-about-us {
