@@ -492,7 +492,7 @@ a {
   height: 160px;
   list-style: none;
 
-  margin-top: 350px;
+  margin-top: 250px;
 }
 
 .popular-square {
@@ -505,7 +505,7 @@ a {
   letter-spacing: 0.18px;
 
   width: 160px;
-  height: 160px;
+  height: 39px;
 
   position: relative;
 }
@@ -622,6 +622,36 @@ a {
 .popular-square:focus,
 .popular-square:active {
   opacity: 0.3;
+}
+
+.brends-four {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  width: 1160px;
+  height: 140px;
+  list-style: none;
+
+  margin-top: 55px;
+  margin-bottom: 72px;
+}
+
+.dji:hover {
+  background-image: url("../img/dji-color.png");
+}
+
+.spgadgets:hover {
+  background-image: url("../img/spgadgets-color.png");
+}
+.gopro:hover {
+  background-image: url("../img/gopro-color.png");
+}
+
+.vivo:hover {
+  background-image: url("../img/vive-color.png");
 }
 
 .main-about {
