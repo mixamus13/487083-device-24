@@ -23,10 +23,9 @@
               <li><a class="basket-link" href="#">Корзина</a></li>
             </ul>
         </section>
-
         <nav>
           <ul class="site-navigation">
-            <li><a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <li class="catalog-link-item"><a class="catalog-link" href="catalog.html">Каталог товаров</a>
               <div class="products-list">
                 <ul class="products">
                   <div class="products-1">
@@ -49,21 +48,52 @@
               <li><a class="contacts-link" href="#">Контакты</a></li>
           </ul>
         </nav>
-
       </div>
     </header>
     <main class="main">
-
       <div class="container">
         <ul class="decorat-picture">
-          <li class="popular-1 popular-square">Виртуальная реальность</li>
-          <li class="popular-2 popular-square">Моноподы<br> для селфи</li>
-          <li class="popular-3 popular-square">Экшн-камеры</li>
-          <li class="popular-4 popular-square">Фитнес-браслеты</li>
-          <li class="popular-5 popular-square">Умные часы</li>
-          <li class="popular-6 popular-square">Квадрокоптеры</li>
+          <li class="popular-1 popular-square"><a class="decorat-tex" href="catalog.html">Виртуальная реальность</a></li>
+          <li class="popular-2 popular-square"><a class="decorat-tex" href="catalog.html">Моноподы<br> для селфи</a></li>
+          <li class="popular-3 popular-square"><a class="decorat-tex" href="catalog.html">Экшн-камеры</a></li>
+          <li class="popular-4 popular-square"><a class="decorat-tex" href="catalog.html">Фитнес-браслеты</a></li>
+          <li class="popular-5 popular-square"><a class="decorat-tex" href="catalog.html">Умные часы</a></li>
+          <li class="popular-6 popular-square"><a class="decorat-tex" href="catalog.html">Квадрокоптеры</a></li>
         </ul>
       </div>
+
+      <div class="delivery-big">
+        <section class="container service">
+          <h2 class="visually-hidden">Услуги</h2>
+          <input type="radio" name="service" class="visually-hidden" checked id="delivery" value="delivery">
+          <input type="radio" name="service" class="visually-hidden" id="warranty" value="warranty">
+          <input type="radio" name="service" class="visually-hidden" id="credit" value="credit">
+          <div class="service-controls">
+            <label class="service-controls-delivery service-controls-item" for="delivery">Доставка</label>
+            <label class="service-controls-warranty service-controls-item" for="warranty">Гарантия</label>
+            <label class="service-controls-credit service-controls-item" for="credit">Кредит</label>
+          </div>
+          <div class="service-items service-item-delivery">
+            <h2>Доставка</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+          <div class="service-items service-item-warranty">
+            <h2>Гарантия</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+          <div class="service-items service-item-credit">
+            <h2>Кредит</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+        </section>
+      </div>
+
 
       <div class="container">
         <ul class="brends-four">
@@ -81,7 +111,6 @@
           </li>
         </ul>
       </div>
-
       <div class="main-about container">
         <section class="about-us">
           <h2 class="about">О нас</h2>
@@ -107,7 +136,7 @@
     <footer class="main-footer">
         <div class="footer-top container">
             <a>
-             <img src="img/logo-device-color.svg" width="163" height="35" alt="Логотип Device" class="logo-device-footer">
+              <img src="img/logo-device-color.svg" width="163" height="35" alt="Логотип Device" class="logo-device-footer">
             </a>
           <ul class="user-menu-footer">
             <li><a class="login-link-in-footer" href="#">Войти</a></li>
