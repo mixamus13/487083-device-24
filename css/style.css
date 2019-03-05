@@ -633,16 +633,15 @@ a {
 
 .service {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: inherit;
   min-height: 288px;
   margin-top: 189px;
-
-  border: 1px solid red;
 }
 
 .delivery-big {
   background-color: #e5e5e5;
+  margin-bottom: 300px;
 }
 
 .service-items {
@@ -652,7 +651,7 @@ a {
 #delivery:checked ~ .service-controls .service-controls-delivery,
 #warranty:checked ~ .service-controls .service-controls-warranty,
 #credit:checked ~ .service-controls .service-controls-credit {
-  border: 1px solid red;
+
 }
 
 #delivery:checked ~ .service-item-delivery,
@@ -661,7 +660,109 @@ a {
   display: block;
 }
 
+.service-block {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.47px;
+  line-height: 48px;
 
+  position: relative;
+
+ padding-right: 504px;
+  margin-top: -26px;
+  margin-bottom: 30px;
+}
+
+.delivery-block-picture:after {
+  content: "";
+
+  position: absolute;
+  width: 136px;
+  height: 164px;
+
+  top: 12px;
+  left: 556px;
+
+  background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.warranty-block-picture:after {
+  content: "";
+
+  position: absolute;
+  width: 171px;
+  height: 194px;
+
+  top: 12px;
+  left: 556px;
+
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.credit-block-picture:after {
+  content: "";
+
+  position: absolute;
+  width: 156px;
+  height: 186px;
+
+  top: 12px;
+  left: 556px;
+
+  background-image: url("../img/credit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.service-controls-delivery,
+.service-controls-warranty,
+.service-controls-credit {
+
+  background-color: #f0c52e;
+}
+
+
+.service-block-little {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.15px;
+  line-height: 30px;
+  color: #464646;
+  margin: 0;
+
+  width: 436px;
+}
+
+.service-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  margin-left: 21px;
+  margin-right: 257px;
+  margin-top: -32px;
+  margin-bottom: 125px;
+}
 
 .brends-four {
   display: flex;
