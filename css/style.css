@@ -678,19 +678,18 @@ a {
   margin-bottom: 72px;
 }
 
-.dji:hover {
-  background-image: url("../img/dji-color.png");
+.dji,
+.spgadgets,
+.gopro,
+.vivo {
+  filter: grayscale(1);
 }
 
-.spgadgets:hover {
-  background-image: url("../img/spgadgets-color.png");
-}
-.gopro:hover {
-  background-image: url("../img/gopro-color.png");
-}
-
+.dji:hover,
+.spgadgets:hover,
+.gopro:hover,
 .vivo:hover {
-  background-image: url("../img/vive-color.png");
+  filter: grayscale(0);
 }
 
 .main-about {
