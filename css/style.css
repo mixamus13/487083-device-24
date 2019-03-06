@@ -671,7 +671,7 @@ a {
 
   position: relative;
 
- padding-right: 504px;
+  padding-right: 504px;
   margin-top: -26px;
   margin-bottom: 30px;
 }
@@ -721,11 +721,64 @@ a {
   background-position: 0 0;
 }
 
-.service-controls-delivery,
-.service-controls-warranty,
-.service-controls-credit {
+.service-controls-item:after {
+  content: "";
 
-  background-color: #f0c52e;
+  position: absolute;
+  width: 7px;
+  height: 319px;
+
+  top: -69px;
+  left: 257px;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.delivery-block-picture:before {
+  content: "";
+
+  position: absolute;
+  width: 278px;
+  height: 40px;
+
+  top: 7px;
+  left: -401px;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.warranty-block-picture:before {
+  content: "";
+
+  position: absolute;
+  width: 278px;
+  height: 40px;
+
+  top: 70px;
+  left: -401px;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.credit-block-picture:before {
+  content: "";
+
+  position: absolute;
+  width: 278px;
+  height: 40px;
+
+  top: 136px;
+  left: -401px;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 
@@ -757,11 +810,12 @@ a {
   line-height: 24px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  position: relative;
 
   margin-left: 21px;
   margin-right: 257px;
-  margin-top: -32px;
-  margin-bottom: 125px;
+  margin-top: -30px;
+  margin-bottom: 126px;
 }
 
 .brends-four {
