@@ -517,7 +517,7 @@ a {
   position: relative;
 }
 
-.popular-square:before {
+.popular-square::before {
   content: "";
 
   position: absolute;
@@ -531,7 +531,7 @@ a {
   opacity: 0.5;
 }
 
-.popular-1:after {
+.popular-1::after {
   content: "";
 
   position: absolute;
@@ -546,7 +546,7 @@ a {
   background-position: 0 0;
 }
 
-.popular-2:after {
+.popular-2::after {
   content: "";
 
   position: absolute;
@@ -561,7 +561,7 @@ a {
   background-position: 0 0;
 }
 
-.popular-3:after {
+.popular-3::after {
   content: "";
 
   position: absolute;
@@ -576,7 +576,7 @@ a {
   background-position: 0 0;
 }
 
-.popular-4:after {
+.popular-4::after {
   content: "";
 
   position: absolute;
@@ -591,7 +591,7 @@ a {
   background-position: 0 0;
 }
 
-.popular-5:after {
+.popular-5::after {
   content: "";
 
   position: absolute;
@@ -606,7 +606,7 @@ a {
   background-position: 0 0;
 }
 
-.popular-6:after {
+.popular-6::after {
   content: "";
 
   position: absolute;
@@ -651,8 +651,45 @@ a {
 #delivery:checked ~ .service-controls .service-controls-delivery,
 #warranty:checked ~ .service-controls .service-controls-warranty,
 #credit:checked ~ .service-controls .service-controls-credit {
-
+  background-color: #000000;
+  color: #f7e184;
 }
+
+.service-controls-item {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+
+  border: none;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  position: relative;
+}
+
+.service-controls-item::after {
+  content: '';
+
+  position: absolute;
+  width: 100%;
+  height: 8px;
+
+  top: 7px;
+  left: 0;
+
+  z-index: -1;
+
+  background-color: #f0c52e;
+
+  transition: all .2s linear;
+}
+
 
 #delivery:checked ~ .service-item-delivery,
 #warranty:checked ~ .service-item-warranty,
@@ -666,7 +703,7 @@ a {
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 0.47px;
+  letter-spacing: 1px;
   line-height: 48px;
 
   position: relative;
@@ -674,54 +711,62 @@ a {
   padding-right: 504px;
   margin-top: -26px;
   margin-bottom: 30px;
+  margin-left: -22px;
 }
 
-.delivery-block-picture:after {
+.service-item-delivery,
+.service-item-warranty,
+.service-item-credit {
+  position: relative;
+}
+
+.service-item-delivery::after {
   content: "";
 
   position: absolute;
   width: 136px;
   height: 164px;
 
-  top: 12px;
-  left: 556px;
+  top: -14px;
+  left: 535px;
 
   background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.warranty-block-picture:after {
+.service-item-warranty::after {
   content: "";
 
   position: absolute;
   width: 171px;
   height: 194px;
 
-  top: 12px;
-  left: 556px;
+  top: -38px;
+  left: 520px;
 
   background-image: url("../img/warranty.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.credit-block-picture:after {
+.service-item-credit::after {
   content: "";
 
   position: absolute;
   width: 156px;
   height: 186px;
 
-  top: 12px;
-  left: 556px;
+  top: -38px;
+  left: 511px;
 
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
 }
 
-.service-controls-item:after {
+.service-controls::before {
   content: "";
 
   position: absolute;
@@ -729,52 +774,52 @@ a {
   height: 319px;
 
   top: -69px;
-  left: 257px;
+  left: 283px;
 
   background-color: #000000;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 0
 }
 
-.delivery-block-picture:before {
+.service-item-delivery::before {
+   content: "";
+
+   position: absolute;
+   width: 278px;
+   height: 40px;
+
+   top: -19px;
+   left: -424px;
+
+   background-color: #000000;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+}
+
+.service-item-warranty::before {
   content: "";
 
   position: absolute;
   width: 278px;
   height: 40px;
 
-  top: 7px;
-  left: -401px;
+  top: 46px;
+  left: -424px;
 
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.warranty-block-picture:before {
+.service-item-credit::before {
   content: "";
 
   position: absolute;
   width: 278px;
   height: 40px;
 
-  top: 70px;
-  left: -401px;
-
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.credit-block-picture:before {
-  content: "";
-
-  position: absolute;
-  width: 278px;
-  height: 40px;
-
-  top: 136px;
-  left: -401px;
+  top: 110px;
+  left: -424px;
 
   background-color: #000000;
   background-repeat: no-repeat;
@@ -788,12 +833,13 @@ a {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 0.15px;
-  line-height: 30px;
+  letter-spacing: 0.2px;
+  line-height: 31px;
   color: #464646;
   margin: 0;
+  margin-left: -24px;
 
-  width: 436px;
+  width: 435px;
 }
 
 .service-controls {
@@ -812,7 +858,7 @@ a {
   text-transform: uppercase;
   position: relative;
 
-  margin-left: 21px;
+  margin-left: -5px;
   margin-right: 257px;
   margin-top: -30px;
   margin-bottom: 126px;
