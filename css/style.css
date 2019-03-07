@@ -88,6 +88,11 @@ a {
   opacity: 0.3;
 }
 
+.search-form {
+  display: flex;
+  width: 500px;
+}
+
 .search-field {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
@@ -103,6 +108,7 @@ a {
 
   padding-top: 4px;
   padding-bottom: 5px;
+  margin-right: 168px;
 
   outline: none;
 }
@@ -139,11 +145,7 @@ a {
 }
 
 .search-field:focus + .button-search {
-  display: inline-block;
-}
-
-.search-field:active + .button-search {
-  display: inline-block;
+  visibility: visible;
 }
 
 .button-search {
@@ -157,21 +159,27 @@ a {
   line-height: 2;
   letter-spacing: 0.2px;
   color: #000000;
-  display: none;
+  display: block;
 
   position: relative;
+
+  padding: 1px 18px;
+  height: 42px;
+  margin-top: -5px;
+
+  visibility: hidden;
+
+  outline: none;
 }
 
 .button-search::before {
   content: "";
-
   position: absolute;
-  width: 250px;
+  width: 439px;
   height: 2px;
-
-  top: 33px;
-  left: -195px;
   background-color: #000000;
+  bottom: -2px;
+  right: 0;
 }
 
 .button-search:hover {
@@ -181,8 +189,11 @@ a {
 
 .button-search:focus,
 .button-search:active {
+  display: block;
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
+  visibility: visible;
+
 }
 
 .user-menu {
@@ -655,6 +666,17 @@ a {
   color: #f7e184;
 }
 
+#delivery:checked ~ .service-controls .service-controls-delivery::after,
+#warranty:checked ~ .service-controls .service-controls-warranty::after,
+#credit:checked ~ .service-controls .service-controls-credit::after {
+  background-color: #000000;
+  width: 278px;
+  height: 40px;
+  top: 0;
+}
+
+
+
 .service-controls-item {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
@@ -662,15 +684,26 @@ a {
   font-style: normal;
   font-stretch: normal;
   line-height: 24px;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.85px;
   color: #000000;
   text-transform: uppercase;
 
-  border: none;
-  padding-left: 24px;
-  padding-right: 24px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  border: none;
   position: relative;
+
+  width: 160px;
+  text-align: center;
+  z-index: 0;
+}
+
+.service-controls-item:hover::after {
+  height: 40px;
+  top: 0;
 }
 
 .service-controls-item::after {
@@ -680,10 +713,10 @@ a {
   width: 100%;
   height: 8px;
 
-  top: 7px;
+  top: 16px;
   left: 0;
-
   z-index: -1;
+
 
   background-color: #f0c52e;
 
@@ -710,8 +743,8 @@ a {
 
   padding-right: 504px;
   margin-top: -26px;
-  margin-bottom: 30px;
-  margin-left: -22px;
+  margin-bottom: 31px;
+  margin-left: -16px;
 }
 
 .service-item-delivery,
@@ -728,7 +761,7 @@ a {
   height: 164px;
 
   top: -14px;
-  left: 535px;
+  left: 541px;
 
   background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
@@ -743,7 +776,7 @@ a {
   height: 194px;
 
   top: -38px;
-  left: 520px;
+  left: 526px;
 
   background-image: url("../img/warranty.svg");
   background-repeat: no-repeat;
@@ -758,7 +791,7 @@ a {
   height: 186px;
 
   top: -38px;
-  left: 511px;
+  left: 517px;
 
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
@@ -774,57 +807,13 @@ a {
   height: 319px;
 
   top: -69px;
-  left: 283px;
+  left: 277px;
 
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: 0 0
 }
 
-.service-item-delivery::before {
-   content: "";
-
-   position: absolute;
-   width: 278px;
-   height: 40px;
-
-   top: -19px;
-   left: -424px;
-
-   background-color: #000000;
-   background-repeat: no-repeat;
-   background-position: 0 0;
-}
-
-.service-item-warranty::before {
-  content: "";
-
-  position: absolute;
-  width: 278px;
-  height: 40px;
-
-  top: 46px;
-  left: -424px;
-
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.service-item-credit::before {
-  content: "";
-
-  position: absolute;
-  width: 278px;
-  height: 40px;
-
-  top: 110px;
-  left: -424px;
-
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 
 
 .service-block-little {
@@ -833,11 +822,11 @@ a {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 0.2px;
-  line-height: 31px;
+  letter-spacing: 0.26px;
+  line-height: 30px;
   color: #464646;
   margin: 0;
-  margin-left: -24px;
+  margin-left: -17px;
 
   width: 435px;
 }
@@ -858,9 +847,9 @@ a {
   text-transform: uppercase;
   position: relative;
 
-  margin-left: -5px;
+  margin-left: 1px;
   margin-right: 257px;
-  margin-top: -30px;
+  margin-top: -31px;
   margin-bottom: 126px;
 }
 
@@ -912,6 +901,7 @@ a {
   text-transform: none;
 
   margin: 0;
+  margin-bottom: 66px;
 }
 
 .about-us {
@@ -920,6 +910,8 @@ a {
 
 .description-about-1 {
   margin-bottom: 30px;
+  letter-spacing: 0.15px;
+}
 }
 
 .description-about-2 {
@@ -980,11 +972,11 @@ a {
   content: '';
 
   position: absolute;
-  width: 8px;
-  height: 8px;
-
+  width: 4px;
+  height: 4px;
   top: 16px;
-  left: -15px;
+  left: -13px;
+
   border: 2px solid #e5e5e5;
   border-radius: 50%;
 }
