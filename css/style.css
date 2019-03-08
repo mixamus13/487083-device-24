@@ -1080,6 +1080,138 @@ a {
   opacity: 0.3;
 }
 
+.filter-item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  position: relative;
+}
+
+.filter-item::before {
+  content: '';
+
+  position: absolute;
+  width: 201px;
+  height: 2px;
+
+  top: 23px;
+  left: -2px;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-item::after {
+  content: '';
+
+  position: absolute;
+  width: 201px;
+  height: 2px;
+
+  top: 163px;
+  left: -2px;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: -4px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 36px;
+  font-weight: 700;
+  letter-spacing: 0.18px;
+  margin-left: -2px;
+}
+
+.range-controls {
+  position: relative;
+  height: 40px;
+  margin-bottom: 5px;
+  padding-top: 38px;
+  padding-right: 61px;
+  padding-left: 0;
+  background-color: #ebebeb;
+}
+
+.range-controls .scale {
+  height: 2px;
+  width: 100%;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 29px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 2px;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: -7px;
+}
+
+.range-controls .toggle-max {
+  left: 106px;
+}
+
+.price-controls {
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+
+  width: 33%;
+  margin-bottom: 45px;
+  margin-left: -1px;
+
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 0px 10px 5px;
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  background-color: #ebebeb;
+  border: none;
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .color,
 .bluetooth {
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -1162,6 +1294,7 @@ a {
 
 .filter-container {
   flex-grow: 1;
+  padding-left: 177px;
   background-color: #ebebeb;
 }
 
