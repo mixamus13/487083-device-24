@@ -76,7 +76,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 .logo-device-header:hover {
@@ -200,6 +200,7 @@ a {
   display: flex;
   padding: 0;
   margin: 0;
+  margin-bottom: 3px;
 }
 
 .user-menu a {
@@ -362,7 +363,7 @@ a {
   align-items: baseline;
   margin: 0;
   padding: 0;
-
+  padding-bottom: 6px;
   position: relative;
 }
 
@@ -998,7 +999,7 @@ a {
   text-transform: none;
 
   display: flex;
-  margin-top: 44px;
+  margin-top: 38px;
   margin-bottom: 24px;
   margin-left: 61px;
 }
