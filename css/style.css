@@ -851,26 +851,70 @@ a {
 .filter-color {
   margin: 0;
   padding: 0;
+  padding-left: 37px;
 
   border: none;
   margin-bottom: 29px;
 }
 
+.filter-color legend {
+  margin-left: -39px;
+  padding-bottom: 3px;
+}
+
+.filter-color label {
+  position: relative;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: '';
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+
+  left: -40px;
+  top: -3px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: '';
+  position: absolute;
+
+  width: 27px;
+  height: 27px;
+
+  left: -40px;
+  top: -3px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+
 .filter-bluetooth {
   margin: 0;
   padding: 0;
+  padding-left: 40px;
 
   border: none;
+  border: 1px solid green;
 }
 
 .filter-bluetooth legend {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: -76px;
-}
-
-.bluetooth {
-
+  margin-left: -40px;
 }
 
 .filter-radio {
@@ -878,6 +922,8 @@ a {
   margin-top: 93px;
   margin-bottom: 39px;
 }
+
+
 
 .brends-four {
   display: flex;
@@ -1220,7 +1266,7 @@ a {
   line-height: 24px;
 
   width: 33%;
-  margin-bottom: 45px;
+  margin-bottom: 41px;
   margin-left: -1px;
 
   color: rgba(0, 0, 0, 0.2);
