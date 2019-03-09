@@ -904,17 +904,34 @@ a {
 .filter-bluetooth {
   margin: 0;
   padding: 0;
-  padding-left: 40px;
+  padding-left: 38px;
 
   border: none;
-  border: 1px solid green;
+
+  position: relative;
+}
+
+.filter-bluetooth::before {
+  content: '';
+
+  position: absolute;
+
+  width: 201px;
+  height: 2px;
+
+  left: -2px;
+  top: -12px;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-bluetooth legend {
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: -76px;
-  margin-left: -40px;
+  margin-bottom: -75px;
+  margin-left: -39px;
 }
 
 .filter-radio {
@@ -923,6 +940,44 @@ a {
   margin-bottom: 39px;
 }
 
+.filter-bluetooth label {
+  position: relative;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-radio + label::before {
+  content: '';
+
+  position: absolute;
+
+  width: 25px;
+  height: 25px;
+
+  left: -41px;
+  top: -4px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: '';
+
+  position: absolute;
+
+  width: 25px;
+  height: 25px;
+
+  left: -41px;
+  top: -4px;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 
 .brends-four {
