@@ -676,8 +676,6 @@ a {
   top: 0;
 }
 
-
-
 .service-controls-item {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
@@ -723,7 +721,6 @@ a {
 
   transition: all .2s linear;
 }
-
 
 #delivery:checked ~ .service-item-delivery,
 #warranty:checked ~ .service-item-warranty,
@@ -797,7 +794,6 @@ a {
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 .service-controls::before {
@@ -814,8 +810,6 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0
 }
-
-
 
 .service-block-little {
   font-family: 'opensanslight', Arial, sans-serif;
@@ -852,6 +846,37 @@ a {
   margin-right: 257px;
   margin-top: -31px;
   margin-bottom: 126px;
+}
+
+.filter-color {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  margin-bottom: 29px;
+}
+
+.filter-bluetooth {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-bluetooth legend {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: -76px;
+}
+
+.bluetooth {
+
+}
+
+.filter-radio {
+  padding-left: 0;
+  margin-top: 93px;
+  margin-bottom: 39px;
 }
 
 .brends-four {
@@ -912,7 +937,6 @@ a {
 .description-about-1 {
   margin-bottom: 30px;
   letter-spacing: 0.15px;
-}
 }
 
 .description-about-2 {
@@ -1151,7 +1175,7 @@ a {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 60%;
   height: 2px;
 
   background: #91c92f;
@@ -1238,6 +1262,7 @@ a {
   color: #000000;
   text-transform: none;
   list-style: none;
+  padding: 0;
 }
 
 .catalog {
