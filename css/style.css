@@ -439,6 +439,189 @@ a {
   list-style: none;
 }
 
+.slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  height: 486px;
+  margin-top: 40px;
+
+  width: 1200px;
+  position: relative;
+
+  border: 1px solid red;
+
+  z-index: 1;
+}
+
+.slide-block-long-stick::before {
+  content: "";
+
+  position: absolute;
+  width: 384px;
+  height: 486px;
+
+  top: -36px;
+  left: 110px;
+
+  background-image: url("../img/long-stick.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slide-block-watch::before {
+  content: "";
+
+  position: absolute;
+  width: 345px;
+  height: 485px;
+
+  top: 8px;
+  left: 5px;
+
+  background-image: url("../img/watch.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slide-block-quadcopter::before {
+  content: "";
+
+  position: absolute;
+  width: 526px;
+  height: 334px;
+
+  top: 8px;
+  left: 5px;
+
+  background-image: url("../img/quadcopter.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slide-items {
+  display: none;
+}
+
+#long-stick:checked ~ .slide-controls .slide-controls-long-stick,
+#watch:checked ~ .slide-controls .slide-controls-watch,
+#quadcopter:checked ~ .slide-controls .slide-controls-quadcopter {
+
+}
+
+#long-stick:checked ~ .slide-item-long-stick,
+#watch:checked ~ .slide-item-watch,
+#quadcopter:checked ~ .slide-item-quadcopter {
+  display: block;
+}
+
+.slide-item-long-stick {
+  margin-right: 100px;
+}
+
+.slide-item-watch {
+  margin-right: 100px;
+}
+
+.slide-item-quadcopter {
+  margin-right: 100px;
+}
+
+.slide-block-long-stick,
+.slide-block-watch,
+.slide-block-quadcopter {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+
+  padding-bottom: 19px;
+  padding-left: 1px;
+  margin: 0;
+
+  border: 1px solid green;
+}
+
+.slide-block-little {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #464646;
+
+  padding-bottom: 52px;
+  margin: 0;
+
+  border: 1px solid #1a64ff;
+}
+
+.description-big {
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+
+  padding-top: 57px;
+  padding-bottom: 8px;
+  margin: 0;
+
+  border: 1px solid #fff40f;
+}
+
+.description-small {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  color: #464646;
+
+  padding-bottom: 44px;
+  margin: 0;
+
+  border: 1px solid #0eff10;
+}
+
+.slide-controls-long-stick {
+  padding-bottom: 20px;
+  padding-right: 17px;
+}
+
+.slide-controls-watch {
+  padding-bottom: 20px;
+  padding-right: 15px;
+}
+
+.slide-controls-quadcopter {
+  padding-bottom: 20px;
+  padding-right: 43px;
+}
+
+.slide-controls {
+  margin-bottom: 190px;
+  padding-bottom: 220px;
+  padding-right: 50px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+
+.filter-input-checkbox-slide {
+  margin-bottom: 192px;
+}
+
 .products a {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 15px;
@@ -464,7 +647,6 @@ a {
   width: 1100px;
   padding-left: 60px;
   padding-bottom: 34px;
-
 
   top: 43px;
   left: -60px;
@@ -842,10 +1024,7 @@ a {
   text-transform: uppercase;
   position: relative;
 
-  margin-left: 1px;
-  margin-right: 257px;
-  margin-top: -31px;
-  margin-bottom: 126px;
+  margin: -31px 257px 126px 1px;
 }
 
 .filter-color {
@@ -898,8 +1077,6 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
-
 
 .filter-bluetooth {
   margin: 0;
@@ -1812,19 +1989,6 @@ a {
   text-transform: none;
 }
 
-/*
-
-.user-menu-footer a:hover {
-  opacity: 0.7;
-}
-
-.user-menu-footer a:focus,
-.user-menu-footer a:active {
-  opacity: 0.3;
-}
-
-*/
-
 .login-link-out-footer {
   opacity: 0.3;
 }
@@ -1865,7 +2029,6 @@ a {
   color: #ffffff;
   text-transform: none;
 }
-
 
 .site-navigation-footer a {
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -2005,6 +2168,12 @@ a {
   padding: 0 24px;
 
   position: relative;
+
+  z-index: 0;
+}
+
+.button-yellow-filter {
+  background-color: #ebebeb;
 }
 
 .button-yellow::after {
