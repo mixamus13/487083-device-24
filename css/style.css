@@ -450,7 +450,26 @@ a {
   position: relative;
 }
 
+.slide-item-long-stick {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
 
+.slide-item-watch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  padding-right: 51px;
+  padding-bottom: 97px;
+}
+
+.slide-item-quadcopter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
 
 .slide-block-long-stick::before {
   content: "";
@@ -474,8 +493,8 @@ a {
   width: 345px;
   height: 485px;
 
-  top: 8px;
-  left: 5px;
+  top: -25px;
+  left: 125px;
 
   background-image: url("../img/watch.jpg");
   background-repeat: no-repeat;
@@ -571,7 +590,7 @@ a {
   margin: 0;
 }
 
-.button-yellow-quadcopter {
+.button-yellow-stick {
   margin-left: 20px;
   margin-bottom: 56px;
 }
@@ -607,6 +626,7 @@ a {
   margin: 0;
 }
 
+
 .slide-block-watch {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
@@ -616,8 +636,73 @@ a {
   line-height: 56px;
   letter-spacing: 0.47px;
 
+  margin: 0;
+  padding-bottom: 19px;
+}
+
+.slide-block-little-watch {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #464646;
+
+  padding-bottom: 51px;
+  padding-right: 81px;
+  margin: 0;
+}
+
+.clock-change {
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+
+  display: block;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.description-clock {
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.description-watch {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  color: #464646;
+
+  margin: 0;
+  margin-bottom: -59px;
+}
+
+.button-yellow-watch {
+  margin-left: 18px;
   margin-bottom: 58px;
-  margin-left: -40px;
 }
 
 
@@ -636,7 +721,6 @@ a {
   padding-left: 1px;
   margin: 0;
 }
-
 
 .slide-controls-long-stick {
   padding-bottom: 20px;
