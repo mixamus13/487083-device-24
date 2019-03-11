@@ -447,13 +447,10 @@ a {
   height: 486px;
   margin-top: 40px;
 
-  width: 1200px;
   position: relative;
-
-  border: 1px solid red;
-
-  z-index: 1;
 }
+
+
 
 .slide-block-long-stick::before {
   content: "";
@@ -462,7 +459,7 @@ a {
   width: 384px;
   height: 486px;
 
-  top: -36px;
+  top: -38px;
   left: 110px;
 
   background-image: url("../img/long-stick.jpg");
@@ -516,21 +513,7 @@ a {
   display: block;
 }
 
-.slide-item-long-stick {
-  margin-right: 100px;
-}
-
-.slide-item-watch {
-  margin-right: 100px;
-}
-
-.slide-item-quadcopter {
-  margin-right: 100px;
-}
-
-.slide-block-long-stick,
-.slide-block-watch,
-.slide-block-quadcopter {
+.slide-block-long-stick {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -539,11 +522,9 @@ a {
   line-height: 56px;
   letter-spacing: 0.47px;
 
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   padding-left: 1px;
   margin: 0;
-
-  border: 1px solid green;
 }
 
 .slide-block-little {
@@ -557,12 +538,11 @@ a {
   color: #464646;
 
   padding-bottom: 52px;
+  padding-right: 81px;
   margin: 0;
-
-  border: 1px solid #1a64ff;
 }
 
-.description-big {
+.description-parameter {
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
@@ -571,11 +551,29 @@ a {
   line-height: 48px;
   letter-spacing: 0.36px;
 
-  padding-top: 57px;
-  padding-bottom: 8px;
-  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 8px;
+}
 
-  border: 1px solid #fff40f;
+.description-long {
+  padding-right: 79px;
+  margin: 0;
+}
+
+.description-weight {
+  padding-right: 76px;
+  margin: 0;
+}
+
+.description-material {
+  margin: 0;
+}
+
+.button-yellow-quadcopter {
+  margin-left: 20px;
+  margin-bottom: 56px;
 }
 
 .description-small {
@@ -588,11 +586,57 @@ a {
   letter-spacing: 0.13px;
   color: #464646;
 
-  padding-bottom: 44px;
-  margin: 0;
-
-  border: 1px solid #0eff10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 46px;
 }
+
+.long-stick {
+  margin: 0;
+  padding-left: 1px;
+  padding-right: 81px;
+}
+
+.weight-stick {
+  margin: 0;
+  padding-right: 80px;
+}
+
+.material-stick {
+  margin: 0;
+}
+
+.slide-block-watch {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+
+  margin-bottom: 58px;
+  margin-left: -40px;
+}
+
+
+
+
+.slide-block-quadcopter {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+
+  padding-bottom: 20px;
+  padding-left: 1px;
+  margin: 0;
+}
+
 
 .slide-controls-long-stick {
   padding-bottom: 20px;
