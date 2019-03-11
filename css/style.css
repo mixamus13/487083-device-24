@@ -508,8 +508,8 @@ a {
   width: 526px;
   height: 334px;
 
-  top: 8px;
-  left: 5px;
+  top: 11px;
+  left: 80px;
 
   background-image: url("../img/quadcopter.jpg");
   background-repeat: no-repeat;
@@ -720,7 +720,106 @@ a {
   padding-bottom: 20px;
   padding-left: 1px;
   margin: 0;
+
+  margin-bottom: -1px;
+  margin-right: 32px;
 }
+
+.slide-block-little-quadcopter {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #464646;
+
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.button-yellow-quadcopter {
+  margin-left: 20px;
+  margin-bottom: 58px;
+}
+
+.big-little-parameter {
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.description-big {
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 7px;
+  margin-right: 61px;
+}
+
+.description-little {
+  font-family: 'gilroylight', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.description-target {
+  font-family: 'opensanslight', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  color: #464646;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 61px;
+}
+
+.description-flight {
+  margin: 0;
+  margin-right: 47px;
+  margin-left: 2px;
+}
+
+.radius-target {
+  margin: 0;
+}
+
+
+
 
 .slide-controls-long-stick {
   padding-bottom: 20px;
