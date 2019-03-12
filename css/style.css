@@ -473,7 +473,8 @@ a {
   align-items: flex-end;
 }
 
-.slide-block-long-stick::before {
+
+.long-stick-picture {
   content: "";
 
   position: absolute;
@@ -483,12 +484,11 @@ a {
   top: -38px;
   left: 110px;
 
-  background-image: url("../img/long-stick.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.slide-block-watch::before {
+.watch-picture {
   content: "";
 
   position: absolute;
@@ -498,12 +498,11 @@ a {
   top: -25px;
   left: 125px;
 
-  background-image: url("../img/watch.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.slide-block-quadcopter::before {
+.quadcopter-picture {
   content: "";
 
   position: absolute;
@@ -513,7 +512,6 @@ a {
   top: 11px;
   left: 80px;
 
-  background-image: url("../img/quadcopter.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2396,6 +2394,7 @@ a {
 
 .button-yellow-filter {
   background-color: #ebebeb;
+  background: none;
 }
 
 .button-yellow::after {
