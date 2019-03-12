@@ -448,6 +448,8 @@ a {
   margin-top: 40px;
 
   position: relative;
+
+  z-index: 1;
 }
 
 .slide-item-long-stick {
@@ -481,7 +483,7 @@ a {
   top: -38px;
   left: 110px;
 
-  background-image: url("../img/long-stick.jpg");
+  background-image: url("../img/long-stick.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -496,7 +498,7 @@ a {
   top: -25px;
   left: 125px;
 
-  background-image: url("../img/watch.jpg");
+  background-image: url("../img/watch.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -511,7 +513,7 @@ a {
   top: 11px;
   left: 80px;
 
-  background-image: url("../img/quadcopter.jpg");
+  background-image: url("../img/quadcopter.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -626,7 +628,6 @@ a {
   margin: 0;
 }
 
-
 .slide-block-watch {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 47px;
@@ -704,9 +705,6 @@ a {
   margin-left: 18px;
   margin-bottom: 58px;
 }
-
-
-
 
 .slide-block-quadcopter {
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -818,9 +816,6 @@ a {
   margin: 0;
 }
 
-
-
-
 .slide-controls-long-stick {
   padding-bottom: 20px;
   padding-right: 17px;
@@ -833,7 +828,7 @@ a {
 
 .slide-controls-quadcopter {
   padding-bottom: 20px;
-  padding-right: 43px;
+  padding-right: 34px;
 }
 
 .slide-controls {
@@ -842,7 +837,7 @@ a {
   padding-right: 50px;
   cursor: pointer;
   position: absolute;
-  z-index: 1;
+  /*z-index: 1;*/
 }
 
 .filter-input-checkbox-slide {
