@@ -55,14 +55,15 @@
       <div class="slide-catalogs">
         <section class="container slide">
           <h2 class="visually-hidden"></h2>
-          <input type="radio" name="slide" class="visually-hidden filter-input-checkbox-slide" id="long-stick" value="long-stick" checked hidden>
-          <input type="radio" name="slide" class="visually-hidden filter-input-checkbox-slide" id="watch" value="watch" hidden>
-          <input type="radio" name="slide" class="visually-hidden filter-input-checkbox-slide" id="quadcopter" value="quadcopter" hidden>
+          <input type="radio" name="toggle" class="visually-hidden filter-input-checkbox-slide" id="long-stick" value="long-stick" checked hidden>
+          <input type="radio" name="toggle" class="visually-hidden filter-input-checkbox-slide" id="watch" value="watch" hidden>
+          <input type="radio" name="toggle" class="visually-hidden filter-input-checkbox-slide" id="quadcopter" value="quadcopter" hidden>
           <div class="slide-controls">
             <label class="slide-controls-long-stick slide-controls-item" for="long-stick">П</label>
             <label class="slide-controls-watch slide-controls-item" for="watch">Ч</label>
             <label class="slide-controls-quadcopter slide-controls-item" for="quadcopter">К</label>
           </div>
+
           <div class="slide-items slide-item-long-stick">
             <h2 class="slide-block-long-stick">Делай селфи,<br> как Бен Стиллер!</h2>
             <img src="img/long-stick.png" class="long-stick-picture" width="384" height="486" alt="Самая длинная палка для селфи">
@@ -70,16 +71,16 @@
               Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
             <button type="submit" class="button-yellow button-yellow-filter button-yellow-stick">Подробнее</button>
-              <div class="description-parameter">
-                <p class="description-long">8,5 м</p>
-                <p class="description-weight">5 кг</p>
-                <p class="description-material">Карбон</p>
-            </div>
-            <div class="description-small">
-              <p class="long-stick">Длина палки</p>
-              <p class="weight-stick">Вес палки</p>
-              <p class="material-stick">Материал</p>
-            </div>
+              <ul class="description-parameter">
+                <li class="description-long">8,5 м</li>
+                <li class="description-weight">5 кг</li>
+                <li class="description-material">Карбон</li>
+            </ul>
+            <ul class="description-small">
+              <li class="long-stick">Длина палки</li>
+              <li class="weight-stick">Вес палки</li>
+              <li class="material-stick">Материал</li>
+            </ul>
           </div>
 
           <div class="slide-items slide-item-watch">
@@ -89,10 +90,10 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.
             </p>
             <button type="submit" class="button-yellow button-yellow-filter button-yellow-watch">Подробнее</button>
-            <div class="clock-change">
-              <p class="description-clock">48 часов</p>
-              <p class="description-watch">Без подзарядки</p>
-            </div>
+            <ul class="clock-change">
+              <li class="description-clock">48 часов</li>
+              <li class="description-watch">Без подзарядки</li>
+            </ul>
           </div>
 
           <div class="slide-items slide-item-quadcopter">
@@ -102,14 +103,14 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.
             </p>
             <button type="submit" class="button-yellow button-yellow-filter button-yellow-quadcopter">Подробнее</button>
-            <div class="big-little-parameter">
-              <p class="description-big">800 м</p>
-              <p class="description-little">50 м</p>
-            </div>
-            <div class="description-target">
-              <p class="description-flight">Дальность полета</p>
-              <p class="radius-target">Радиус поражения</p>
-            </div>
+            <ul class="big-little-parameter">
+              <li class="description-big">800 м</li>
+              <li class="description-little">50 м</li>
+            </ul>
+            <ul class="description-target">
+              <li class="description-flight">Дальность полета</li>
+              <li class="radius-target">Радиус поражения</li>
+            </ul>
           </div>
         </section>
       </div>

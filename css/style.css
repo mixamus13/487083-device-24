@@ -541,7 +541,7 @@ a {
   line-height: 56px;
   letter-spacing: 0.47px;
 
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   padding-left: 1px;
   margin: 0;
 }
@@ -556,7 +556,7 @@ a {
   letter-spacing: 0.15px;
   color: #464646;
 
-  padding-bottom: 52px;
+  margin-bottom: 51px;
   padding-right: 81px;
   margin: 0;
 }
@@ -569,11 +569,14 @@ a {
   font-stretch: normal;
   line-height: 48px;
   letter-spacing: 0.36px;
+  list-style: none;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 8px;
+  margin-top: 36px;
+  margin-bottom: -6px;
+  margin-left: -39px;
 }
 
 .description-long {
@@ -592,7 +595,8 @@ a {
 
 .button-yellow-stick {
   margin-left: 20px;
-  margin-bottom: 56px;
+  margin-bottom: 22px;
+  margin-top: 51px;
 }
 
 .description-small {
@@ -604,11 +608,14 @@ a {
   line-height: 20px;
   letter-spacing: 0.13px;
   color: #464646;
+  list-style: none;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: 46px;
+
+  margin-left: -40px;
+  margin-bottom: 47px;
 }
 
 .long-stick {
@@ -662,6 +669,9 @@ a {
   font-stretch: normal;
   line-height: 48px;
   letter-spacing: 0.36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
   display: block;
   justify-content: flex-start;
@@ -713,11 +723,9 @@ a {
   line-height: 56px;
   letter-spacing: 0.47px;
 
-  padding-bottom: 20px;
-  padding-left: 1px;
-  margin: 0;
+  padding: 0;
 
-  margin-bottom: -1px;
+  margin-bottom: 19px;
   margin-right: 32px;
 }
 
@@ -731,13 +739,13 @@ a {
   letter-spacing: 0.15px;
   color: #464646;
 
-  padding-bottom: 50px;
-  margin: 0;
+  padding: 0;
+  margin-bottom: 52px;
 }
 
 .button-yellow-quadcopter {
   margin-left: 20px;
-  margin-bottom: 58px;
+  margin-bottom: 20px;
 }
 
 .big-little-parameter {
@@ -748,11 +756,13 @@ a {
   font-stretch: normal;
   line-height: 48px;
   letter-spacing: 0.36px;
+  list-style: none;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: -11px;
+  padding: 0;
 }
 
 .description-big {
@@ -797,11 +807,13 @@ a {
   line-height: 20px;
   letter-spacing: 0.13px;
   color: #464646;
+  list-style: none;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 61px;
+  padding: 0;
 }
 
 .description-flight {
@@ -830,9 +842,8 @@ a {
 }
 
 .slide-controls {
-  margin-bottom: 190px;
   padding-bottom: 220px;
-  padding-right: 50px;
+  padding-right: 20px;
   cursor: pointer;
   position: absolute;
   /*z-index: 1;*/
@@ -2414,6 +2425,33 @@ a {
   transition: all .2s linear;
 }
 
+.button-yellow-stick,
+.button-yellow-watch,
+.button-yellow-quadcopter {
+  background-color: #ebebeb;
+  background: none;
+}
+
+.button-yellow-stick::after,
+.button-yellow-watch::after,
+.button-yellow-quadcopter::after {
+  content: '';
+
+  position: absolute;
+  width: 220px;
+  height: 8px;
+
+  top: 8px;
+  left: -18px;
+
+  z-index: -1;
+
+  background-color: #f0c52e;
+
+  transition: all .2s linear;
+}
+
+
 .map-button-yellow {
   padding: 0 42px;
 }
@@ -2421,7 +2459,6 @@ a {
 .button-yellow:hover::after {
   height: 40px;
   top: -10px;
-
 }
 
 .button-yellow:focus,
