@@ -46,7 +46,7 @@ body {
   color: #000000;
   text-transform: none;
   padding: 0;
-  min-width: 1160px;
+  min-width: 1200px;
 }
 
 a {
@@ -1710,11 +1710,11 @@ a {
 
 .sorty-filter {
   display: flex;
-  justify-self: center;
   align-items: center;
-  height: 70px;
   background-color: #ebebeb;
-  padding: 0;
+  padding: 5px 0;
+  margin-bottom: 70px;
+  margin-right: auto;
 }
 
 .sorty {
@@ -1737,8 +1737,9 @@ a {
   line-height: 24px;
   letter-spacing: 3.7px;
   padding: 0;
-  margin-top: -46px;
+
   margin-bottom: 69px;
+  margin-top: 24px;
 }
 
 .sort {
@@ -1750,7 +1751,9 @@ a {
 
   padding: 0;
   margin-right: 10px;
-  margin-left: 540px;
+  margin-left: 33px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .sort-cost {
@@ -1998,6 +2001,8 @@ a {
 .catalog {
   display: flex;
   flex-grow: 1;
+  background: #ffffff;
+  width: 780px;
 }
 
 .catalog-list {
@@ -2006,8 +2011,9 @@ a {
   width: 947px;
   padding: 0;
   margin: 0;
-  padding-left: 73px;
-;
+
+  margin-top: 140px;
+  margin-left: -900px;
 
   list-style: none;
 }
@@ -2041,6 +2047,7 @@ a {
 
 .catalog-content {
   display: flex;
+  background: linear-gradient(to bottom,#dadada 70px,#ececec 70px);
 }
 
 .filter {
@@ -2049,9 +2056,21 @@ a {
 }
 
 .filter-container {
+  display: flex;
   flex-grow: 1;
-  padding-left: 177px;
-  background-color: #ebebeb;
+  /*margin-left: 275px;*/
+  /*padding-left: 61px;*/
+  margin-top: 0;
+  /*background-color: #ebebeb;*/
+  /*min-width: 467px;*/
+}
+
+.filter-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 300px;
+
 }
 
 .catalog-item-price {
@@ -2641,8 +2660,10 @@ a {
 .modal-map {
   top: 50%;
   left: 50%;
+
   width: 960px;
   height: 559px;
+
   border: none;
   z-index: 1;
   margin-left: -480px;
@@ -2656,17 +2677,20 @@ a {
 }
 
 .modal-write {
-  top: 100px;
-  left: 1054px;
+  top: 50%;
+  left: 50%;
 
   width: 960px;
-  height: 559px;
+  height: 553px;
+
+  border: none;
+  z-index: 1;
+  margin-left: -480px;
+  margin-top: -280px;
 
   display: none;
 
-
-  margin-top: -43px;
-  margin-left: -493px;
+  border: none;
 
   z-index: 1;
 }
@@ -2685,6 +2709,7 @@ a {
   border: none;
 
   cursor: pointer;
+  outline: none;
 }
 
 .modal-close-map::before {
@@ -2714,15 +2739,17 @@ a {
 
   background-color: transparent;
   border: none;
+
   cursor: pointer;
+  outline: none;
 }
 
 .modal-close-write::before {
   content: '';
 
   position: absolute;
-  top: 10px;
-  left: -10px;
+  top: 17px;
+  left: -17px;
 
   width: 55px;
   height: 55px;
@@ -2730,4 +2757,26 @@ a {
   background-image: url("../img/modal-close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.our-name {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 99px;
+  margin-left: 102px;
+}
+
+.our-email {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 99px;
+  margin-left: 238px;
 }
