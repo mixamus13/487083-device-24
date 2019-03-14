@@ -1740,6 +1740,7 @@ a {
 
   margin-bottom: 69px;
   margin-top: 24px;
+  margin-left: 10px;
 }
 
 .sort {
@@ -1751,8 +1752,8 @@ a {
 
   padding: 0;
   margin-right: 10px;
-  margin-left: 33px;
-  margin-top: 18px;
+  margin-left: 73px;
+  margin-top: 19px;
   margin-bottom: 18px;
 }
 
@@ -2001,8 +2002,9 @@ a {
 .catalog {
   display: flex;
   flex-grow: 1;
-  background: #ffffff;
+  flex-direction: column;
   width: 780px;
+  background: linear-gradient(to bottom,#ececec 70px,#ffffff 70px);
 }
 
 .catalog-list {
@@ -2047,7 +2049,7 @@ a {
 
 .catalog-content {
   display: flex;
-  background: linear-gradient(to bottom,#dadada 70px,#ececec 70px);
+
 }
 
 .filter {
@@ -2058,6 +2060,7 @@ a {
 .filter-container {
   display: flex;
   flex-grow: 1;
+  background: linear-gradient(to bottom,#dadada 70px,#ececec 70px);
   /*margin-left: 275px;*/
   /*padding-left: 61px;*/
   margin-top: 0;
@@ -2069,7 +2072,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-left: auto;
-  width: 300px;
+  width: 276px;
 
 }
 
@@ -2529,7 +2532,7 @@ a {
   text-transform: uppercase;
 
   border: none;
-  padding: 0 24px;
+  padding: 0 40px;
 
   position: relative;
 
