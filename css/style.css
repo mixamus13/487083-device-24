@@ -1966,6 +1966,22 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.toggle:hover {
+  position: absolute;
+  top: 28px;
+  left: 0;
+
+  width: 6px;
+  height: 6px;
+  padding: 2px;
+
+  border: 9px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .range-controls .toggle-min {
   left: -7px;
 }
