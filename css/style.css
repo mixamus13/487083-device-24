@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'gilroyextrabold';
-    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-         url('../fonts/gilroyextrabold.woff') format('woff');
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+  url('../fonts/gilroyextrabold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gilroylight';
-    src: url('../fonts/gilroylight.woff2') format('woff2'),
-         url('../fonts/gilroylight.woff') format('woff');
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+  url('../fonts/gilroylight.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'opensans';
-    src: url('../fonts/opensans.woff2') format('woff2'),
-         url('../fonts/opensans.woff') format('woff');
+  src: url('../fonts/opensans.woff2') format('woff2'),
+  url('../fonts/opensans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'opensanslight';
-    src: url('../fonts/opensanslight.woff2') format('woff2'),
-         url('../fonts/opensanslight.woff') format('woff');
+  src: url('../fonts/opensanslight.woff2') format('woff2'),
+  url('../fonts/opensanslight.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,6 +33,7 @@
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -58,6 +59,27 @@ a {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: content-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+
+  -webkit-clip-path: inset(100%);
 }
 
 .logo-device-header-index {
@@ -118,7 +140,7 @@ a {
   outline: none;
 }
 
-.search{
+.search {
   padding-left: 38px;
   position: relative;
 }
@@ -226,7 +248,7 @@ a {
 }
 
 .profile-link:focus,
-.profile-link:active{
+.profile-link:active {
   opacity: 0.3;
 }
 
@@ -235,7 +257,7 @@ a {
 }
 
 .compare-link:focus,
-.compare-link:active{
+.compare-link:active {
   opacity: 0.3;
 }
 
@@ -244,7 +266,7 @@ a {
 }
 
 .basket-link:focus,
-.basket-link:active{
+.basket-link:active {
   opacity: 0.3;
 }
 
@@ -253,7 +275,7 @@ a {
 }
 
 .login-link-in:focus,
-.login-link-in:active{
+.login-link-in:active {
   opacity: 0.3;
 }
 
@@ -1686,7 +1708,6 @@ a {
 }
 
 .category-catalog {
-  margin-right: -2px;
   display: inline-block;
   vertical-align: top;
 }
@@ -1712,7 +1733,6 @@ a {
   display: flex;
   align-items: center;
   background-color: #ebebeb;
-  padding: 5px 0;
   margin-bottom: 70px;
   margin-right: auto;
 }
@@ -1724,7 +1744,7 @@ a {
   height: 70px;
   list-style: none;
   background-color: #ebebeb;
-  padding-top: 24px;
+  padding-top: 22px;
   margin: 0;
 
   border: none;
@@ -1752,41 +1772,33 @@ a {
 
   padding: 0;
   margin-right: 10px;
-  margin-left: 73px;
+  margin-left: 74px;
   margin-top: 19px;
   margin-bottom: 18px;
 }
 
 .sort-cost {
+  margin-right: 28px;
+}
+
+.catalog-sort a {
   font-family: 'opensanslight', Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
   letter-spacing: 0.3px;
-  margin-right: 28px;
-  margin-top: 2px;
+  color: inherit;
 }
 
 .sort-type {
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 18px;
-  letter-spacing: 0.3px;
   opacity: 0.3;
   margin-right: 31px;
-  margin-top: 2px;
 }
 
+
 .sort-popular {
-  font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 18px;
-  letter-spacing: 0.3px;
   opacity: 0.3;
   margin-right: 241px;
-  margin-top: 2px;
 }
 
 .up-down {
@@ -1803,7 +1815,7 @@ a {
   margin-right: 10px;
 }
 
-.sort-up::before {
+.sort-up a::before {
   content: '';
   position: absolute;
 
@@ -1824,7 +1836,12 @@ a {
   margin-right: 0;
 }
 
-.sort-down::after {
+.sort-up a,
+.sort-down a {
+  position: relative;
+}
+
+.sort-down a::after {
   content: '';
   position: absolute;
 
@@ -2004,13 +2021,13 @@ a {
   flex-grow: 1;
   flex-direction: column;
   width: 780px;
-  background: linear-gradient(to bottom,#ececec 70px,#ffffff 70px);
+  background: linear-gradient(to bottom, #ececec 70px, #ffffff 70px);
 }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  width: 760px;
+  width: 800px;
   padding: 0;
   margin: 0;
   margin-left: 73px;
@@ -2042,12 +2059,19 @@ a {
   width: 360px;
   height: 380px;
   margin-right: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 126px;
+}
+
+.amateur-stick {
+  margin-top: 2px;
+}
+
+.amateur-price {
+  margin-top: 2px;
 }
 
 .catalog-content {
   display: flex;
-
 }
 
 .filter {
@@ -2058,7 +2082,7 @@ a {
 .filter-container {
   display: flex;
   flex-grow: 1;
-  background: linear-gradient(to bottom,#dadada 70px,#ececec 70px);
+  background: linear-gradient(to bottom, #dadada 70px, #ececec 70px);
   /*margin-left: 275px;*/
   /*padding-left: 61px;*/
   margin-top: 0;
@@ -2107,6 +2131,46 @@ a {
   opacity: 0.2;
 }
 
+.toggle-catalog {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ebebeb;
+  width: 759px;
+  height: 70px;
+
+  margin-bottom: 77px;
+  margin-top: -11px;
+  margin-left: 74px;
+  padding: 0;
+
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.backwards {
+  margin-left: -101px;
+  margin-top: 1px;
+}
+
+.forward {
+  margin-right: -104px;
+  margin-top: 1px;
+}
+
+.scale-catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+
 .logo-device:hover {
   object-fit: contain;
   opacity: 0.6;
@@ -2119,7 +2183,7 @@ a {
 
 .footer-middle a {
   font-family: 'opensanslight', Arial, sans-serif;
-  font-size: 15px;  /*не могу выставить шрифт*/
+  font-size: 15px; /*не могу выставить шрифт*/
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
