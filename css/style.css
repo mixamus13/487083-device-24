@@ -1677,24 +1677,10 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 40px;
+  margin-right: 36px;
 }
 
-.category-catalog::after {
-  content: '';
 
-  position: absolute;
-  width: 13px;
-  height: 13px;
-
-  top: 9px;
-  right: -31px;
-  background-image: url("../img/nav-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  opacity: 1;
-}
 
 .breadcrumbs a {
   text-decoration: none;
@@ -1714,22 +1700,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-2 .category-catalog {
   width: 237px;
-}
-
-.amateur-price {
-  margin-left: 45px;
-}
-
-.prof-price {
-  margin-left: 44px;
-}
-
-.nowaiter-price {
-  margin-left: 21px;
-}
-
-.follow-price {
-  margin-left: 55px;
 }
 
 .catalog-item-4 .category-catalog {
@@ -1764,6 +1734,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   border: none;
+
+
 }
 
 .filter-big {
@@ -2078,12 +2050,96 @@ input[type="radio"].visually-hidden {
   margin-bottom: 126px;
 }
 
+.amateur {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
 .amateur-stick {
-  margin-top: 2px;
+  margin-top: 9px;
 }
 
 .amateur-price {
-  margin-top: 2px;
+  margin-top: 9px;
+  margin-left: 50px;
+}
+
+.prof {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.prof-stick {
+  margin-top: 10px;
+}
+
+.prof-price {
+  margin-top: 9px;
+  margin-left: 48px;
+}
+
+.no-waiter {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.no-waiter-stick {
+  margin-top: 10px;
+}
+
+.no-waiter-price {
+  margin-top: 9px;
+  margin-left: 26px;
+}
+
+.follow {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  position: relative;
+}
+
+.follow::before {
+  content: '';
+
+  position: absolute;
+  width: 60px;
+  height: 60px;
+
+  top: -375px;
+  left: 273px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  opacity: 0.1;
+}
+
+.follow::after {
+  content: 'NEW';
+
+  font-size: 14px;
+  position: absolute;
+  width: 32px;
+  height: 11px;
+
+  top: -354px;
+  left: 289px;
+
+  opacity: 0.1;
+}
+
+.follow-stick {
+  margin-top: 9px;
+}
+
+.follow-price {
+  margin-top: 9px;
+  margin-left: 59px;
 }
 
 .catalog-content {
@@ -2185,17 +2241,14 @@ input[type="radio"].visually-hidden {
 
 .one-numb {
   margin-right: 29px;
-  opacity: 1;
 }
 
 .two-numb {
   margin-right: 28px;
-  opacity: 0.3;
 }
 
 .three-numb {
   margin-right: -13px;
-  opacity: 0.3;
 }
 
 .scale-catalog {
@@ -2207,6 +2260,35 @@ input[type="radio"].visually-hidden {
   margin-top: 20px;
 }
 
+.one-numb,
+.two-numb,
+.three-numb {
+  opacity: 0.3;
+}
+
+.one-numb:hover,
+.two-numb:hover,
+.three-numb:hover {
+  opacity: 0.6;
+}
+
+.one-numb:focus,
+.one-numb:active,
+.two-numb:focus,
+.two-numb:active,
+.three-numb:focus,
+.three-numb:active {
+  opacity: 1;
+}
+
+.backwards:hover {
+  opacity: 1;
+}
+
+.backwards:focus,
+.backwards:active {
+  opacity: 0.3;
+}
 
 .logo-device:hover {
   object-fit: contain;
