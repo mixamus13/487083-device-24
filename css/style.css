@@ -2168,14 +2168,34 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.toggle-catalog a {
+  color: inherit;
+  /*opacity: 0.3;*/
+}
+
 .backwards {
-  margin-left: -101px;
+  margin-left: -91px;
   margin-top: 1px;
 }
 
 .forward {
-  margin-right: -104px;
+  margin-right: -92px;
   margin-top: 1px;
+}
+
+.one-numb {
+  margin-right: 29px;
+  opacity: 1;
+}
+
+.two-numb {
+  margin-right: 28px;
+  opacity: 0.3;
+}
+
+.three-numb {
+  margin-right: -13px;
+  opacity: 0.3;
 }
 
 .scale-catalog {
@@ -2184,6 +2204,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   padding: 0;
   list-style: none;
+  margin-top: 20px;
 }
 
 
@@ -2769,11 +2790,16 @@ input[type="radio"].visually-hidden {
   margin-left: -480px;
   margin-top: -280px;
 
-  display: none;
+  /*display: none;*/
 
   border: none;
 
   z-index: 1;
+}
+
+.write-form {
+  margin: 60px;
+  margin-bottom: 10px;
 }
 
 .modal-close-map {
