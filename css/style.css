@@ -1966,7 +1966,8 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.toggle:hover {
+.toggle:focus,
+.toggle:active {
   position: absolute;
   top: 28px;
   left: 0;
