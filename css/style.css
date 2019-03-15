@@ -1716,6 +1716,22 @@ input[type="radio"].visually-hidden {
   width: 237px;
 }
 
+.amateur-price {
+  margin-left: 45px;
+}
+
+.prof-price {
+  margin-left: 44px;
+}
+
+.nowaiter-price {
+  margin-left: 21px;
+}
+
+.follow-price {
+  margin-left: 55px;
+}
+
 .catalog-item-4 .category-catalog {
   width: 222px;
 }
