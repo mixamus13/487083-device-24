@@ -705,7 +705,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-yellow-stick {
-  margin-left: 20px;
+  margin-left: 19px;
   margin-bottom: 22px;
   margin-top: 51px;
 }
@@ -726,7 +726,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 
   margin-left: -40px;
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 }
 
 .long-stick {
@@ -819,7 +819,7 @@ input[type="radio"].visually-hidden {
   color: #464646;
 
   margin: 0;
-  margin-bottom: -59px;
+  margin-bottom: -60px;
 }
 
 .button-yellow-watch {
@@ -1004,15 +1004,24 @@ input[type="radio"].visually-hidden {
 .products-1 {
   display: flex;
   justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .products-2 {
   display: flex;
   justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .products-3 {
   justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .monopod {
@@ -1715,8 +1724,6 @@ input[type="radio"].visually-hidden {
   margin-right: 36px;
 }
 
-
-
 .breadcrumbs a {
   text-decoration: none;
   color: #000000;
@@ -1765,7 +1772,7 @@ input[type="radio"].visually-hidden {
   height: 70px;
   list-style: none;
   background-color: #ebebeb;
-  padding-top: 22px;
+  padding-top: 26px;
   margin: 0;
 
   border: none;
@@ -2829,6 +2836,7 @@ input[type="radio"].visually-hidden {
 .button-yellow-quadcopter {
   background-color: #ebebeb;
   background: none;
+  padding: 0 25px;
 }
 
 .button-yellow-stick::after,
@@ -2954,7 +2962,7 @@ input[type="radio"].visually-hidden {
   margin-left: -480px;
   margin-top: -280px;
 
-  /*display: none;*/
+  display: none;
 
   border: none;
 
