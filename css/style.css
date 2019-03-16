@@ -1410,6 +1410,15 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:hover + label::before {
+   opacity: 0.6;
+ }
+
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:active + label::before{
+  opacity: 1;
+}
+
 .filter-input-checkbox:checked + label::after {
   content: '';
   position: absolute;
@@ -1420,9 +1429,18 @@ input[type="radio"].visually-hidden {
   left: -40px;
   top: -3px;
 
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:checked:hover + label::after {
+  opacity: 0.6;
+}
+
+.filter-input-checkbox:checked:focus + label::after,
+.filter-input-checkbox:checked:active + label::after {
+  opacity: 1;
 }
 
 .filter-bluetooth {
@@ -1487,6 +1505,15 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.filter-input-radio:hover + label::before {
+  opacity: 0.6;
+}
+
+.filter-input-radio:focus + label::before,
+.filter-input-radio:active + label::before {
+  opacity: 1;
+}
+
 .filter-input-radio:checked + label::after {
   content: '';
 
@@ -1498,11 +1525,19 @@ input[type="radio"].visually-hidden {
   left: -41px;
   top: -4px;
 
-  background-image: url("../img/radio-on.svg");
+  background-image: url("../img/radio.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+.filter-input-radio:checked:hover + label::after {
+  opacity: 1;
+}
+
+.filter-input-radio:checked:focus + label::after,
+.filter-input-radio:checked:active + label::after {
+  opacity: 1;
+}
 
 .brends-four {
   display: flex;
