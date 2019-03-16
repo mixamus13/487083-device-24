@@ -254,21 +254,22 @@
 
 <section class="modal modal-write">
   <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-    <ul class="our-name">
-      <label class="write-label" for="write-name">Ваше имя:</label>
-      <input class="write-field" id="write-name" type="text" name="name" placeholder="Имя Фамилия">
-    </ul>
-    <ul class="our-email">
-      <label class="write-label" for="write-email">Ваш e-mail:</label>
-      <input class="write-field" id="write-email" type="email" name="e-mail" value=""
-                 placeholder="email@example.com">
-    </ul>
-    <p>
-      <label class="write-label" for="write-text">Текст письма:</label>
-      <textarea class="write-field" id="write-text" name="text" rows="8" cols="50"
-                placeholder="Текст в свободной форме"></textarea>
-    </p>
-    <button class="button-yellow" type="submit">Отправить</button>
+    <div class="write-text-modal">
+      <ul class="our-name">
+        <li><label class="write-label-1" for="write-name">Ваше имя:</label></li>
+        <li><input class="write-field-1" id="write-name" type="text" name="name" placeholder="Имя Фамилия"></li>
+      </ul>
+      <ul class="our-email">
+        <li><label class="write-label-2" for="write-email">Ваш e-mail:</label></li>
+        <li><input class="write-field-2" id="write-email" type="email" name="e-mail" value="" placeholder="email@example.com"></li>
+      </ul>
+      <ul class="text-letter">
+        <li><label class="write-label-3" for="write-text">Текст письма:</label></ul>
+        <li><textarea class="write-field-3" id="write-text" name="text" rows="7" cols="101"
+                placeholder="В свободной форме" ></textarea></li>
+      <ul>
+    </div>
+    <button class="button-yellow button-yellow-write" type="submit">Отправить</button>
     <button class="modal-close-write" type="button">Закрыть</button>
   </form>
 </section>
