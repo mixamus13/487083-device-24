@@ -2951,10 +2951,6 @@ input[type="radio"].visually-hidden {
   margin-top: -280px;
 
   display: none;
-
-  border: none;
-
-  z-index: 1;
 }
 
 .modal-write {
@@ -2968,9 +2964,7 @@ input[type="radio"].visually-hidden {
   margin-left: -480px;
   margin-top: -280px;
 
-  /*display: none;*/
-
-  border: none;
+  display: none;
 
   z-index: 20;
 }
@@ -3088,8 +3082,8 @@ textarea {
   content: '';
 
   position: absolute;
-  top: 10px;
-  left: -10px;
+  top: 7px;
+  left: -31px;
 
   width: 55px;
   height: 55px;
