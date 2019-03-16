@@ -2965,7 +2965,6 @@ input[type="radio"].visually-hidden {
   height: 553px;
 
   border: none;
-  z-index: 1;
   margin-left: -480px;
   margin-top: -280px;
 
@@ -2973,7 +2972,7 @@ input[type="radio"].visually-hidden {
 
   border: none;
 
-  z-index: 1;
+  z-index: 20;
 }
 
 .write-text-modal {
@@ -3042,8 +3041,8 @@ input[type="radio"].visually-hidden {
 }
 
 .write-field-3 {
-  margin-left: 100px;
-  margin-top: -11px;
+  margin-left: -1px;
+  margin-top: 8px;
   padding-left: 18px;
 }
 
@@ -3056,13 +3055,13 @@ textarea {
   padding: 10px 12px;
 }
 
-input[type=text] {
+.our-name input[type=text] {
   width: 360px;
   height: 50px;
   padding: 0 18px;
 }
 
-input[type=email] {
+.our-email input[type=email] {
   width: 360px;
   height: 50px;
   padding: 0 18px;

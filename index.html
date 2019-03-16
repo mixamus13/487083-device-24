@@ -43,9 +43,11 @@
             </div>
           </div>
         </div>
-        <li><a class="delivery-link" href="#">Доставка</a></li>
-        <li><a class="warranty-link" href="#">Гарантия</a></li>
-        <li><a class="contacts-link" href="#">Контакты</a></li>
+
+          <li><a class="delivery-link" href="#">Доставка</a></li> <!-- обернуть в UL -->
+          <li><a class="warranty-link" href="#">Гарантия</a></li>
+          <li><a class="contacts-link" href="#">Контакты</a></li>
+
       </div>
     </nav>
   </div>
@@ -264,10 +266,10 @@
         <li><input class="write-field-2" id="write-email" type="email" name="e-mail" value="" placeholder="email@example.com"></li>
       </ul>
       <ul class="text-letter">
-        <li><label class="write-label-3" for="write-text">Текст письма:</label></ul>
+        <li><label class="write-label-3" for="write-text">Текст письма:</label></li>
         <li><textarea class="write-field-3" id="write-text" name="text" rows="7" cols="101"
                 placeholder="В свободной форме" ></textarea></li>
-      <ul>
+      </ul>
     </div>
     <button class="button-yellow button-yellow-write" type="submit">Отправить</button>
     <button class="modal-close-write" type="button">Закрыть</button>
