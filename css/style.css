@@ -2306,7 +2306,7 @@ input[type="radio"].visually-hidden {
 
   margin-bottom: 77px;
   margin-top: -11px;
-  margin-left: 74px;
+  margin-left: 72px;
   padding: 0;
 
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -2322,18 +2322,59 @@ input[type="radio"].visually-hidden {
   /*opacity: 0.3;*/
 }
 
-.backwards {
-  margin-left: -91px;
-  margin-top: 1px;
+.button {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-color: #ebebeb;
 }
 
-.forward {
-  margin-right: -92px;
-  margin-top: 1px;
+.button-back {
+
+  margin-top: -1px;
+
+  padding-top: 25px;
+  padding-right: 35px;
+  padding-bottom: 21px;
+  padding-left: 30px;
+}
+
+.button-back:hover {
+  background-color: #d9d9d9;
+}
+
+.button-back:focus,
+.button-back:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button-next {
+  margin-top:0px;
+
+  padding-top: 25px;
+  padding-right: 26px;
+  padding-bottom: 21px;
+  padding-left: 33px;
+}
+
+.button-next:hover {
+  background-color: #d9d9d9;
+}
+
+.button-next:focus,
+.button-next:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .one-numb {
-  margin-right: 29px;
+  margin-right: 27px;
 }
 
 .two-numb {
@@ -2351,9 +2392,15 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
   margin-top: 20px;
+
+  margin-left: 203px;
+  margin-right: 205px;
 }
 
-.one-numb,
+.one-numb {
+  opacity: 1;
+}
+
 .two-numb,
 .three-numb {
   opacity: 0.3;
