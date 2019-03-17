@@ -3054,8 +3054,12 @@ input[type="radio"].visually-hidden {
   z-index: 20;
 }
 
+.modal-show {
+   display: block;
+ }
+
 .write-text-modal {
-  display: ;
+  display: block;  /* свойство было удалено */
   justify-content: center;
   align-items: center;
 }
