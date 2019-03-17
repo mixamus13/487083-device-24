@@ -10,7 +10,6 @@ link.addEventListener("click", function (evt) {
   popup.classList.add("modal-show");
 });
 
-
 linz.addEventListener("click", function (evt) {
   evt.preventDefault();
   map.classList.add("modal-show");
