@@ -3051,6 +3051,10 @@ input[type="radio"].visually-hidden {
 
 }
 
+.modal-map iframe {
+  border: none;
+}
+
 .modal-write {
   top: 50%;
   left: 50%;
