@@ -44,9 +44,9 @@
           </div>
         </div>
 
-          <li><a class="delivery-link" href="#">Доставка</a></li> <!-- обернуть в UL -->
-          <li><a class="warranty-link" href="#">Гарантия</a></li>
-          <li><a class="contacts-link" href="#">Контакты</a></li>
+        <li><a class="delivery-link" href="#">Доставка</a></li> <!-- обернуть в UL -->
+        <li><a class="warranty-link" href="#">Гарантия</a></li>
+        <li><a class="contacts-link" href="#">Контакты</a></li>
 
       </div>
     </nav>
@@ -58,11 +58,10 @@
     <section class="container slider">
       <h2 class="visually-hidden"></h2>
       <input type="radio" name="toggle" class="visually-hidden filter-input-checkbox-slide" id="long-stick"
-             value="long-stick" checked hidden>
-      <input type="radio" name="toggle" class="visually-hidden filter-input-checkbox-slide" id="watch" value="watch"
-             hidden>
+             value="long-stick" checked>
+      <input type="radio" name="toggle" class="visually-hidden filter-input-checkbox-slide" id="watch" value="watch">
       <input type="radio" name="toggle" class="visually-hidden filter-input-checkbox-slide" id="quadcopter"
-             value="quadcopter" hidden>
+             value="quadcopter">
       <div class="slide-controls ">
         <label class="slide-controls-long-stick slide-controls-item" for="long-stick"></label>
         <label class="slide-controls-watch slide-controls-item" for="watch"></label>
@@ -136,9 +135,9 @@
   <div class="delivery-big">
     <section class="container service">
       <h2 class="visually-hidden"></h2>
-      <input type="radio" name="service" class="visually-hidden" checked id="delivery" value="delivery" hidden>
-      <input type="radio" name="service" class="visually-hidden" id="warranty" value="warranty" hidden>
-      <input type="radio" name="service" class="visually-hidden" id="credit" value="credit" hidden>
+      <input type="radio" name="service" class="visually-hidden" checked id="delivery" value="delivery">
+      <input type="radio" name="service" class="visually-hidden" id="warranty" value="warranty">
+      <input type="radio" name="service" class="visually-hidden" id="credit" value="credit">
       <div class="service-controls">
         <label class="service-controls-delivery service-controls-item" for="delivery">Доставка</label>
         <label class="service-controls-warranty service-controls-item" for="warranty">Гарантия</label>
@@ -257,23 +256,26 @@
 <section class="modal modal-write">
   <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
     <div class="write-text-modal">
-      <ul class="our-name">
-        <li><label class="write-label-1" for="write-name">Ваше имя:</label></li>
-        <li><input class="write-field-1" id="write-name" type="text" name="name" placeholder="Имя Фамилия"></li>
-      </ul>
-      <ul class="our-email">
-        <li><label class="write-label-2" for="write-email">Ваш e-mail:</label></li>
-        <li><input class="write-field-2" id="write-email" type="email" name="email" value="" placeholder="email@example.com"></li>
-      </ul>
-      <ul class="text-letter">
-        <li><label class="write-label-3" for="write-text">Текст письма:</label></li>
-        <li><textarea class="write-field-3" id="write-text" name="text" rows="7" cols="101"
-                placeholder="В свободной форме" ></textarea></li>
-      </ul>
+      <div class="first-line">
+        <div class="our-name">
+          <label class="write-label-1 write-label" for="write-name">Ваше имя:</label>
+          <input class="write-field-1" id="write-name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="our-email">
+          <label class="write-label-2 write-label" for="write-email">Ваш e-mail:</label>
+          <input class="write-field-2" id="write-email" type="email" name="email" value=""
+                 placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="text-letter">
+        <label class="write-label-3 write-label" for="write-text">Текст письма:</label>
+        <textarea class="write-field-3" id="write-text" name="text" rows="7" cols="90"
+                  placeholder="В свободной форме"></textarea>
+      </div>
     </div>
     <button class="button-yellow button-yellow-write" type="submit">Отправить</button>
-    <button class="modal-close-write" type="button">Закрыть</button>
   </form>
+  <button class="modal-close-write" type="button">Закрыть</button>
 </section>
 <script src="js/script.js"></script>
 </body>

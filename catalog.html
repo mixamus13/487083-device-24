@@ -88,26 +88,24 @@
             <ul class="filter-checkbox">
               <li>
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="black" id="filter-black"
-                       checked hidden>
+                       checked>
                 <label class="black" for="filter-black">Черный</label>
               </li>
               <li>
-                <input class="filter-input-checkbox" type="checkbox" name="white" id="filter-white" hidden>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="white" id="filter-white">
                 <label for="filter-white">Белый</label>
               </li>
               <li>
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="blue" id="filter-blue"
-                       checked hidden>
+                       checked>
                 <label for="filter-blue">Синий</label>
               </li>
               <li>
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked
-                       hidden>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
                 <label for="filter-red">Красный</label>
               </li>
               <li>
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pink" id="filter-pink"
-                       hidden>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
                 <label for="filter-pink">Розовый</label>
               </li>
             </ul>
@@ -117,14 +115,13 @@
             <legend class="bluetooth">Bluetooth</legend>
             <ul class="filter-radio">
               <li class="filter-option">
-                <input class="filter-input-radio" type="radio" name="bluetooth" id="filter-yes" value="yes" checked
-                       hidden>
+                <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth" id="filter-yes" value="yes" checked>
                 <label for="filter-yes">
                   Есть
                 </label>
               </li>
               <li class="filter-option">
-                <input class="filter-input-radio" type="radio" name="bluetooth" id="filter-no" value="no" hidden>
+                <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth" id="filter-no" value="no" hidden>
                 <label for="filter-no">
                   Нет
                 </label>
@@ -157,36 +154,44 @@
         </ul>
       </div>
       <div class="catalog-list">
-        <div class="catalog-item-1">
-          <a href="in-carbage" class="button-yellow" hidden>В корзину</a>
-          <a href="add-campare" class="add-compare">Добавить к сравнению</a>
+        <div class="catalog-item-1 catalog-item">
+          <div class="actions">
+            <a href="#" class="button-yellow in-carbage">В корзину</a>
+            <a href="#" class="add-compare">Добавить к сравнению</a>
+          </div>
           <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
           <ul class="amateur">
             <li class="category-catalog amateur-stick">Любительская селфи-палка</li>
             <li class="catalog-item-price amateur-price">500 руб.</li>
           </ul>
         </div>
-        <div class="catalog-item-2">
-          <a href="in-carbage" class="button-yellow" hidden>В корзину</a>
-          <a href="add-campare" class="add-compare">Добавить к сравнению</a>
+        <div class="catalog-item-2 catalog-item">
+          <div class="actions">
+            <a href="#" class="button-yellow in-carbage">В корзину</a>
+            <a href="#" class="add-compare">Добавить к сравнению</a>
+          </div>
           <img src="img/item-2-jpg.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
           <ul class="prof">
             <li class="category-catalog prof-stick">Профессиональная селфи-палка</li>
             <li class="catalog-item-price prof-price">1 500 руб.</li>
           </ul>
         </div>
-        <div class="catalog-item-3">
-          <a href="in-carbage" class="button-yellow" hidden>В корзину</a>
-          <a href="add-campare" class="add-compare">Добавить к сравнению</a>
+        <div class="catalog-item-3 catalog-item">
+          <div class="actions">
+            <a href="#" class="button-yellow in-carbage">В корзину</a>
+            <a href="#" class="add-compare">Добавить к сравнению</a>
+          </div>
           <img src="img/item-3-jpg.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
           <ul class="no-waiter">
             <li class="category-catalog no-waiter-stick">Непотопляемая селфи-палка</li>
             <li class="catalog-item-price no-waiter-price">2 500 руб.</li>
           </ul>
         </div>
-        <div class="catalog-item-4">
-          <a href="in-carbage" class="button-yellow" hidden>В корзину</a>
-          <a href="add-campare" class="add-compare">Добавить к сравнению</a>
+        <div class="catalog-item-4 catalog-item">
+          <div class="actions">
+            <a href="#" class="button-yellow in-carbage">В корзину</a>
+            <a href="#" class="add-compare">Добавить к сравнению</a>
+          </div>
           <img src="img/item-4-jpg.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
           <ul class="follow">
             <li class="category-catalog follow-stick">Селфи-палка «Следуй за мной»</li>
@@ -194,14 +199,15 @@
           </ul>
         </div>
       </div>
+
       <div class="toggle-catalog">
-        <button class="button button-back" type="button"><a href="#">Назад</a></button>
+        <a class="button button-back">Назад</a>
           <ul class="scale-catalog">
-            <li><a class="one-numb" href="#">1</a></li>
-            <li><a class="two-numb" href="#">2</a></li>
-            <li><a class="three-numb" href="#">3</a></li>
+            <li><a class="one-numb numb" href="#">1</a></li>
+            <li><a class="two-numb numb" href="#">2</a></li>
+            <li><a class="three-numb numb" href="#">3</a></li>
           </ul>
-        <button class="button button-next" type="button"><a href="#">Вперед</a></button>
+        <a class="button button-next">Вперед</a>
       </div>
     </section>
   </div>
