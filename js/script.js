@@ -8,7 +8,7 @@ var map = document.querySelector(".modal-map");
 
 var closes = document.querySelector(".modal-close-map");
 
-var storege = localStorage.getItem("name");
+var storage = localStorage.getItem("name");
 
 var form = popup.querySelector("form");
 var name = popup.querySelector("[name=name]");
