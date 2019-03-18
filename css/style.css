@@ -3165,7 +3165,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-yellow-write {
-  margin-left: -5px;
+  margin-left: 1px;
+  padding: 0 34px;
 }
 
 .our-name input[type=text] {
