@@ -423,6 +423,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   text-transform: uppercase;
   list-style: none;
+  white-space: nowrap;
 
   display: inline-block;
 }
@@ -1098,7 +1099,8 @@ input[type="radio"].visually-hidden {
   background-color: #f7e296;
   width: 1100px;
   padding-left: 60px;
-  padding-bottom: 52px;
+  padding-bottom: 34px;
+  padding-top: 18px;
 
   top: 43px;
   left: -60px;
@@ -3602,6 +3604,8 @@ input[type="radio"].visually-hidden {
   background: transparent;
   background-image: url("../img/modal-close.svg");
   outline: none;
+
+  cursor: pointer;
 }
 
 
@@ -3619,4 +3623,6 @@ input[type="radio"].visually-hidden {
   background: transparent;
   background-image: url("../img/modal-close.svg");
   outline: none;
+
+  cursor: pointer;
 }
