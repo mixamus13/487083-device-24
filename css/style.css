@@ -3369,7 +3369,10 @@ input[type="radio"].visually-hidden {
   margin-top: -280px;
 
   display: none;
+}
 
+.iframe {
+  border: none;
 }
 
 .modal-map iframe {
