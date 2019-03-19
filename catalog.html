@@ -25,29 +25,31 @@
       </ul>
     </section>
     <nav>
-      <ul class="site-navigation">
-        <li class="catalog-link-item"><a class="catalog-link" href="#">Каталог товаров</a>
+      <div class="site-navigation">
+        <div class="catalog-link-item"><a class="catalog-link" href="catalog.html">Каталог товаров</a>
           <div class="products-list">
-            <ul class="products">
-              <div class="products-1">
+            <div class="products">
+              <ul class="products-1">
                 <li><a class="virt-r" href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Фитнес-браслеты</a></li>
                 <li><a class="qadro" href="#">Квадрокоптеры</a></li>
-              </div>
-              <div class="products-2">
+              </ul>
+              <ul class="products-2">
                 <li><a class="monopod" href="#">Моноподы для селфи</a></li>
                 <li><a href="#">Умные часы</a></li>
-              </div>
-              <div class="products-3">
+              </ul>
+              <ul class="products-3">
                 <li><a href="#">Экшн-камеры</a></li>
-              </div>
-            </ul>
+              </ul>
+            </div>
           </div>
-        </li>
-        <li><a class="delivery-link" href="#">Доставка</a></li>
-        <li><a class="warranty-link" href="#">Гарантия</a></li>
-        <li><a class="contacts-link" href="#">Контакты</a></li>
-      </ul>
+        </div>
+        <ul class="site-navigation-header">
+          <li><a class="delivery-link" href="#">Доставка</a></li>
+          <li><a class="warranty-link" href="#">Гарантия</a></li>
+          <li><a class="contacts-link" href="#">Контакты</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>
@@ -56,7 +58,7 @@
     <h1 class="headline">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li><a href="index.html" class="category-catalog breadcrumbs-catalog">Главная</a></li>
-      <li><a href="catalog.html" class="category-catalog bread-catalog">Каталог товаров</a></li>
+      <li><a href="catalog.html" class="category-catalog bread-catalog breadcrumbs-catalog">Каталог товаров</a></li>
       <li><a class="category-catalog breadcrumbs-catalog">Моноподы для селфи</a></li>
     </ul>
   </div>
@@ -115,13 +117,15 @@
             <legend class="bluetooth">Bluetooth</legend>
             <ul class="filter-radio">
               <li class="filter-option">
-                <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth" id="filter-yes" value="yes" checked>
+                <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth" id="filter-yes"
+                       value="yes" checked>
                 <label for="filter-yes">
                   Есть
                 </label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth" id="filter-no" value="no" hidden>
+                <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth" id="filter-no"
+                       value="no" hidden>
                 <label for="filter-no">
                   Нет
                 </label>
@@ -202,11 +206,11 @@
 
       <div class="toggle-catalog">
         <a class="button button-back">Назад</a>
-          <ul class="scale-catalog">
-            <li><a class="one-numb numb" href="#">1</a></li>
-            <li><a class="two-numb numb" href="#">2</a></li>
-            <li><a class="three-numb numb" href="#">3</a></li>
-          </ul>
+        <ul class="scale-catalog">
+          <li><a class="one-numb numb" href="#">1</a></li>
+          <li><a class="two-numb numb" href="#">2</a></li>
+          <li><a class="three-numb numb" href="#">3</a></li>
+        </ul>
         <a class="button button-next">Вперед</a>
       </div>
     </section>
