@@ -1968,11 +1968,14 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.bread-chief:hover,
 .bread-catalog:hover {
   opacity: 0.6;
 }
 
+.bread-chief:focus,
 .bread-catalog:focus,
+.bread-chief:active
 .bread-catalog:active {
   opacity: 0.1;
 }
