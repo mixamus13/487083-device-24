@@ -709,12 +709,10 @@ input[type='radio'].visually-hidden {
   letter-spacing: 0.15px;
   color: #464646;
 
-  margin-bottom: 51px;
-  padding-right: 81px;
   margin: 0;
+  margin-right: 81px;
 
-  width: 481px;
-  height: 61px;
+  max-width: 481px;
 }
 
 .description-parameter {
@@ -830,12 +828,11 @@ input[type='radio'].visually-hidden {
   letter-spacing: 0.15px;
   color: #464646;
 
-  padding-bottom: 51px;
-  padding-right: 81px;
   margin: 0;
+  margin-bottom: 51px;
+  margin-right: 81px;
 
-  width: 441px;
-  height: 61px;
+  max-width: 441px;
 }
 
 .clock-change {
@@ -930,11 +927,10 @@ input[type='radio'].visually-hidden {
   letter-spacing: 0.15px;
   color: #464646;
 
-  padding: 0;
+  margin: 0;
   margin-bottom: 52px;
 
-  width: 451px;
-  height: 61px;
+  max-width: 451px;
 }
 
 .button-yellow-quadcopter {
