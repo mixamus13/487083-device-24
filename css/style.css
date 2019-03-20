@@ -712,6 +712,9 @@ input[type='radio'].visually-hidden {
   margin-bottom: 51px;
   padding-right: 81px;
   margin: 0;
+
+  width: 481px;
+  height: 61px;
 }
 
 .description-parameter {
@@ -830,6 +833,9 @@ input[type='radio'].visually-hidden {
   padding-bottom: 51px;
   padding-right: 81px;
   margin: 0;
+
+  width: 441px;
+  height: 61px;
 }
 
 .clock-change {
@@ -926,10 +932,13 @@ input[type='radio'].visually-hidden {
 
   padding: 0;
   margin-bottom: 52px;
+
+  width: 451px;
+  height: 61px;
 }
 
 .button-yellow-quadcopter {
-  margin-left: 20px;
+  margin-left: 19px;
   margin-bottom: 20px;
 }
 
