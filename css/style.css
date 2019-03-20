@@ -572,7 +572,7 @@ input[type='radio'].visually-hidden {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  margin-right: 30px;
+  margin-right: 28px;
   margin-bottom: -16px;
 }
 
@@ -710,6 +710,7 @@ input[type='radio'].visually-hidden {
   color: #464646;
 
   margin: 0;
+  margin-bottom: 52px;
   margin-right: 81px;
 
   max-width: 481px;
@@ -736,7 +737,7 @@ input[type='radio'].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 36px;
+  margin-top: 58px;
   margin-bottom: -6px;
   margin-left: -39px;
 }
@@ -813,7 +814,7 @@ input[type='radio'].visually-hidden {
   letter-spacing: 0.47px;
 
   margin: 0;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
 
   position: relative;
 }
@@ -855,6 +856,7 @@ input[type='radio'].visually-hidden {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 8px;
+  margin-top: 58px;
 }
 
 .description-clock {
@@ -915,6 +917,7 @@ input[type='radio'].visually-hidden {
   margin-right: 32px;
 
   position: relative;
+  max-width: 502px;
 }
 
 .slide-block-little-quadcopter {
@@ -960,6 +963,7 @@ input[type='radio'].visually-hidden {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: -11px;
+  margin-top: 56px;
   padding: 0;
 }
 
@@ -3259,7 +3263,7 @@ input[type='radio'].visually-hidden {
   width: 220px;
   height: 8px;
 
-  top: 8px;
+  top: 7px;
   left: -18px;
 
   z-index: -1;
