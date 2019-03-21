@@ -2449,6 +2449,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   list-style: none;
   padding: 0;
+  padding-top: 18px;
 }
 
 .amateur-stick {
@@ -2466,6 +2467,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   list-style: none;
   padding: 0;
+  padding-top: 18px;
 }
 
 .prof-stick {
@@ -2483,6 +2485,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   list-style: none;
   padding: 0;
+  padding-top: 18px;
 }
 
 .no-waiter-stick {
@@ -2502,7 +2505,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   list-style: none;
   padding: 0;
-
+  padding-top: 18px;
   position: relative;
 }
 
@@ -2887,7 +2890,7 @@ input[type='radio'].visually-hidden {
 }
 
 .profile-link-footer {
-  margin-right: 14px;
+  margin-right: 18px;
   padding-left: 26px;
   position: relative;
 }
@@ -2936,7 +2939,7 @@ input[type='radio'].visually-hidden {
 }
 
 .footer-top {
-  margin-bottom: -15px;
+  margin-bottom: -30px;
 }
 
 .footer-middle {
@@ -2949,7 +2952,7 @@ input[type='radio'].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 62px;
+  margin-bottom: 47px;
 
   position: relative;
 }
@@ -2961,7 +2964,7 @@ input[type='radio'].visually-hidden {
   width: 80px;
   height: 7px;
 
-  bottom: -84px;
+  top: 122px;
   left: 21px;
 
   background-color: #f0c52e;
