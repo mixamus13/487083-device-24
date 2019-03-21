@@ -306,9 +306,9 @@ input[type="radio"].visually-hidden {
 }
 
 .profile-link {
-  margin-right: 15px;
+  margin-right: 14px;
   position: relative;
-  padding-left: 27px;
+  padding-left: 25px;
 }
 
 .profile-link::before {
@@ -390,6 +390,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   white-space: nowrap;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .site-navigation a:hover {
@@ -975,6 +976,7 @@ input[type="radio"].visually-hidden {
 
 .products {
   display: inline-block;
+  vertical-align: baseline;
   list-style: none;
   padding: 1px;
 }
@@ -2057,6 +2059,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: baseline;
   font-family: "gilroylight", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -2568,6 +2571,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.2px;
   color: #ffffff;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .user-menu-footer {
@@ -2618,7 +2622,7 @@ input[type="radio"].visually-hidden {
 }
 
 .profile-link-footer {
-  margin-right: 18px;
+  margin-right: 15px;
   padding-left: 26px;
   position: relative;
 }
