@@ -1211,6 +1211,12 @@ input[type="radio"].visually-hidden {
   top: 0;
 }
 
+#delivery:focus ~ .service-controls .service-controls-delivery,
+#warranty:focus ~ .service-controls .service-controls-warranty,
+#credit:focus ~ .service-controls .service-controls-credit {
+  outline: auto;
+}
+
 .service-controls-item {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
@@ -1435,6 +1441,10 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.filter-input-checkbox:focus + label {
+  outline: auto;
+}
+
 .cost-line {
   position: relative;
 }
@@ -1466,7 +1476,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
 
 .filter-bluetooth {
   margin: 0;
@@ -1550,6 +1559,10 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:checked:focus + label::after,
 .filter-input-radio:checked:active + label::after {
   opacity: 1;
+}
+
+.filter-input-radio:focus + label {
+  outline: auto;
 }
 
 .brends-four {
