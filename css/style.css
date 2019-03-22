@@ -1199,6 +1199,7 @@ input[type="radio"].visually-hidden {
 #credit:checked ~ .service-controls .service-controls-credit {
   background-color: #000000;
   color: #f7e184;
+  padding-left: 3px;
 }
 
 #delivery:checked ~ .service-controls .service-controls-delivery::after,
@@ -1367,14 +1368,13 @@ input[type="radio"].visually-hidden {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   position: relative;
-  margin: -31px 257px 126px 1px;
+  margin: -31px 254px 126px 1px;
 }
 
 .filter-color {
   margin: 0;
   padding: 0;
   padding-left: 37px;
-
   border: none;
   margin-bottom: 29px;
 }
