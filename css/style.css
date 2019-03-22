@@ -574,6 +574,12 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+#long-stick:focus ~ .slide-controls .slide-controls-long-stick,
+#watch:focus ~ .slide-controls .slide-controls-watch,
+#quadcopter:focus ~ .slide-controls .slide-controls-quadcopter {
+  outline: auto;
+}
+
 .slide-block-long-stick {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 47px;
@@ -1943,13 +1949,31 @@ input[type="radio"].visually-hidden {
   margin-top: -3px;
 }
 
-.sort-up {
+/*.sort-up {
   position: relative;
   margin-right: 10px;
   opacity: 0.3;
+}*/
+
+.sort-up a {
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-up-dir.svg");
+  opacity: 0.2;
 }
 
-.sort-up a::before {
+.sort-down a {
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-down-dir.svg")
+}
+
+.sort-up a:focus,
+.sort-down a:focus {
+  outline: auto;
+}
+
+/*.sort-up a::before {
   content: "";
   position: absolute;
   width: 11px;
@@ -1959,20 +1983,20 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
+}*/
 
-.sort-down {
+/*.sort-down {
   position: relative;
   margin-right: 0;
   opacity: 1;
-}
+}*/
 
-.sort-up li,
+/*.sort-up li,
 .sort-down li {
   position: relative;
-}
+}*/
 
-.sort-down a::after {
+/*.sort-down a::after {
   content: "";
   position: absolute;
   width: 11px;
@@ -1982,7 +2006,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
+}*/
 
 .sort-up:hover,
 .sort-down:hover {
@@ -1994,6 +2018,7 @@ input[type="radio"].visually-hidden {
 .sort-down:focus,
 .sort-down:active {
   opacity: 1;
+
 }
 
 .filter-item {
