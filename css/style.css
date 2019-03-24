@@ -2980,7 +2980,7 @@ input[type="radio"].visually-hidden {
 .button-yellow-quadcopter {
   background-color: #ebebeb;
   background: none;
-  padding: 0 25px;
+  padding: 0 26px;
 }
 
 .button-yellow-stick::after,
